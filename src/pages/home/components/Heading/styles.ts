@@ -62,6 +62,10 @@ export const Container = styled.div`
       margin-left: 32px;
     }
   }
+
+  .splide__track {
+    overflow: initial;
+  }
 `
 
 
@@ -71,7 +75,7 @@ export const BgImg = styled.div`
   width: 540px;
   height: 537px;
   position: absolute;
-  top: -70px;
+  top: -170px;
   right: calc((99vw - var(--container-width)) / 2);
   border-top-left-radius: 110px;
   border-bottom-right-radius: 110px;
@@ -84,6 +88,19 @@ export const BgImg = styled.div`
 
   img {
     object-fit: cover;
+    animation: expand linear 1s;
     /* opacity: 0.5; */
+  }
+
+  @keyframes expand {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.18);
+    }
+    100% {
+      transform: scale(2.2);
+    }
   }
 `
