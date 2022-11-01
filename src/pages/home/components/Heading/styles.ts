@@ -84,6 +84,6 @@ export const BgImg = styled.div`
 
   img {
     object-fit: cover;
-    opacity: 0.5;
+    /* opacity: 0.5; */
   }
 `
