@@ -68,8 +68,11 @@ export const Container = styled.div`
   }
 `
 
+type BgImgProps = {
+  show: boolean;
+}
 
-export const BgImg = styled.div`
+export const BgImg = styled.div<BgImgProps>`
   overflow: hidden;
   position: relative;
   width: 540px;
@@ -88,8 +91,9 @@ export const BgImg = styled.div`
 
   img {
     object-fit: cover;
-    animation: expand linear 1s;
-    /* opacity: 0.5; */
+    animation: expand linear 12s;
+    display: ${props => props.show ? 'block' : 'none'};
+    transform: scale(1.2);
   }
 
   @keyframes expand {
@@ -97,10 +101,39 @@ export const BgImg = styled.div`
       transform: scale(1);
     }
     50% {
-      transform: scale(1.18);
+      transform: scale(1.1);
     }
     100% {
-      transform: scale(2.2);
+      transform: scale(1.2);
+    }
+  }
+`
+
+export const ArrowDown = styled.button`
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  margin-top: 45px;
+  display: block;
+
+  img {
+    filter: brightness(0) invert(1);
+    animation: down infinite 3s ease-out;
+  }
+
+  @keyframes down {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0px);
     }
   }
 `
