@@ -122,15 +122,15 @@ export const ArrowDown = styled.button`
 
   img {
     filter: brightness(0) invert(1);
-    animation: down infinite 3s ease-out;
+    animation: updown infinite 2s ease-in-out;
   }
 
-  @keyframes down {
+  @keyframes updown {
     0% {
       transform: translateY(0px);
     }
     50% {
-      transform: translateY(20px);
+      transform: translateY(25px);
     }
     100% {
       transform: translateY(0px);

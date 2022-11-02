@@ -4,7 +4,16 @@ export const Container = styled.div`
   max-width: var(--container-width);
   margin: auto;
   color: white;
-  padding-top: 100px;
+  height: 750px;
+  padding-top: 70px;
+
+  h2 {
+    margin-bottom: 75px;
+    &::after {
+      content: '.';
+      color: #23D4AA;
+    }
+  }
 `
 
 export const List = styled.div`

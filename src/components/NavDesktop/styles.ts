@@ -21,13 +21,13 @@ export const Container = styled.div<ContainerProps>`
     height: 60px;
 
     .full-logo {
-      animation: 0.3s appear linear;
+      animation: 0.3s appear-logo linear;
       display: ${props => props.isTop ? 'block' : 'none'};
     }
   
     .short-logo {
       position: absolute;
-      animation: 0.2s appear linear;
+      animation: 0.2s appear-logo linear;
       left: 47px;
       top: 22px;
       display: ${props => props.isTop ? 'none' : 'block'};
@@ -39,9 +39,8 @@ export const Container = styled.div<ContainerProps>`
       top: 22px;
       display: none;
     }
-  
 
-    @keyframes appear {
+    @keyframes appear-logo {
       0% {
         opacity: 0;
       }

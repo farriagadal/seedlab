@@ -1,21 +1,23 @@
 import { Container, IconMore } from './styles'
 import Image from 'next/image'
 import { useState } from 'react'
-import MoreIcon from 'src/public/icons/more-icon.svg'
+import IconWeb from 'public/icons/web-icon.svg'
+import Link from 'next/link'
 
 const CardService = () => {
   const [isHover, setIsHover] = useState(false)
   
   return (
-    <Container isHover={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
-      <Image src='/icons/web-icon.svg' alt="Web Logo" width={114} height={114} />
+    <Container isActive={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
+      <IconWeb />
       <h4>Servicio lorem ipsum dolor.</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
       </p>
-      <IconMore isHover={isHover}>
-        <MoreIcon />
+      <IconMore isActive={isHover}>
+        <Image src='/icons/more-icon.svg' alt="Web Logo" width={25} height={25} />
       </IconMore>
+      <Link href='/' />
     </Container>
   )
 }
