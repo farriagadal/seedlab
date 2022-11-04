@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import NavDesktop from 'src/components/NavDesktop'
 import Heading from 'src/pages/home/components/Heading'
-import Example from 'src/pages/home/components/Example'
+import Footer from 'src/components/Footer'
 import Services from 'src/pages/home/components/Services'
+import OurValues from 'src/pages/home/components/OurValues'
+import HowWorks from 'src/pages/home/components/HowWorks'
+import Techs from 'src/pages/home/components/Techs'
 
 export default function Home() {
   return (
@@ -15,7 +18,10 @@ export default function Home() {
       <NavDesktop />
       <Heading />
       <Services />
-      <Example />
+      <OurValues />
+      <HowWorks />
+      <Techs />
+      <Footer />
     </div>
   )
 }

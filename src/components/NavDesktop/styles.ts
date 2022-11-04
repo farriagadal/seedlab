@@ -9,7 +9,7 @@ export const Container = styled.div<ContainerProps>`
   position: sticky;
   top: 0;
   z-index: 111;
-  background: #031821;
+  background: #021720;
   transition: background 0.2s ease-in-out;
 
   nav {
