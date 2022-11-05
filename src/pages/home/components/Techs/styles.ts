@@ -12,13 +12,21 @@ export const Container = styled.div<ContainerProps>`
   opacity: ${(props) => (props.isActive ? '1' : '0')};
   transform: ${(props) => (props.isActive ? 'translateY(0px)' : 'translateY(250px)')};
   transition: all 0.4s linear;
-
   display: flex;
+
+  @media only screen and (max-width: 765px) {
+    display: block;
+    padding: 0px 20px 120px 20px;
+  }
 `
 
 export const Text = styled.div`
   max-width: 600px;
   align-self: center;
+
+  @media only screen and (max-width: 765px) {
+    margin-bottom: 60px;
+  }
 
   label {
     font-family: 'Nunito';
@@ -64,6 +72,11 @@ export const List = styled.div`
   row-gap: 43px;
   transition: all 0.4s linear;
   max-width: 570px;
+
+  @media only screen and (max-width: 765px) {
+    column-gap: 24px;
+    row-gap: 26px;
+  }
 `
 
 export const Tech = styled.div`
@@ -73,11 +86,20 @@ export const Tech = styled.div`
   background: #FFFFFF;
   border-radius: 30px 0px;
 
+  @media only screen and (max-width: 765px) {
+    width: 100%;
+    height: 100px;
+  }
+
   img {
     max-height: 70px;
     max-width: 170x;
     left: 50% !important;
     top: 50%  !important;
     transform: translateX(-50%) translateY(-50%) !important;
+
+    @media only screen and (max-width: 765px) {
+      max-height: 50px;
+    }
   }
 `

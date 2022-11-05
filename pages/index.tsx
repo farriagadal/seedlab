@@ -20,8 +20,8 @@ export default function Home() {
       <Services />
       <OurValues />
       <HowWorks />
-      {/* <Techs />
-      <Footer /> */}
+      <Techs />
+      <Footer />
     </div>
   )
 }

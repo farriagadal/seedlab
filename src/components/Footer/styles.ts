@@ -9,6 +9,15 @@ export const Container = styled.div`
   align-items: center;
   border-top: 1px solid #072C3C;
   padding: 60px 0;
+  position: relative;
+
+  
+  @media only screen and (max-width: 765px) {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
 
   p {
     font-weight: 300;
@@ -18,12 +27,22 @@ export const Container = styled.div`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+
+    @media only screen and (max-width: 765px) {
+      bottom: 40px;
+      text-align: center;
+      width: 100%;
+    }
   }
 `
 
 export const Icons = styled.div`
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: 765px) {
+    margin: 20px 0;
+  }
 
   a {
     margin-right: 20px;
