@@ -19,7 +19,7 @@ const OurValues = () => {
         <BgImg isActive={isShow || isHover}><Image src='/images/heading-bg.jpg' alt="Seedlab Fondo" fill /></BgImg>
         <Text isActive={isShow || isHover}>
           <label>Nuestro Valor</label>
-          <h2>Lorem ipsum dolor sit amet, consectetur.</h2>
+          <h2>Lorem ipsum dolor sit amet, consectetur</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </Text>
       </Container>

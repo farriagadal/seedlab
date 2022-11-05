@@ -18,6 +18,7 @@ export const Container = styled.div`
     padding-left: 33px;
     padding-bottom: 72px;
     border-top-left-radius: 90px;
+    margin-left: 20px;
   }
 
   p {
@@ -27,6 +28,9 @@ export const Container = styled.div`
     letter-spacing: 0.04em;
     max-width: 494px;
     opacity: 0.7;
+    @media only screen and (max-width: 765px) {
+      padding-right: 20px;
+    }
   }
 
   h1 {
@@ -34,9 +38,9 @@ export const Container = styled.div`
     margin-bottom: 40px;
     max-width: 565px;
 
-    /* @media only screen and (max-width: 765px) {
-
-    } */
+    @media only screen and (max-width: 765px) {
+      padding-right: 20px;
+    }
 
     &::after {
       content: '.';

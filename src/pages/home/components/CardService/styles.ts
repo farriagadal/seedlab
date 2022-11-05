@@ -19,6 +19,13 @@ export const Container = styled.div<ContainerProps>`
   transition: all 0.3s ease-in;
   transform: ${(props) => (props.isActive ? 'translateY(-60px)' : 'none')};
 
+
+  @media only screen and (max-width: 765px) {
+    background: #23D4AA;
+    max-height: 480px;
+    transform: translateY(-60px);
+  }
+
   h4 {
     font-family: 'Poppins';
     font-weight: 800;
@@ -30,6 +37,10 @@ export const Container = styled.div<ContainerProps>`
     &::after {
       content: '.';
       color: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
+
+      @media only screen and (max-width: 765px) {
+        color: #021720;
+      }
     }
   }
 
@@ -43,10 +54,18 @@ export const Container = styled.div<ContainerProps>`
     opacity: 0.7;
     display: ${(props) => (props.isActive ? 'block' : 'none')};
     animation: 0.2s appear linear;
+
+    @media only screen and (max-width: 765px) {
+      display: block;
+    }
   }
 
   svg, path{
     stroke: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
+
+    @media only screen and (max-width: 765px) {
+      stroke: #021720;
+    }
   }
 
   @keyframes appear {
@@ -82,5 +101,10 @@ export const IconMore = styled.div<IconMoreProps>`
   img {
     opacity: ${(props) => (props.isActive ? '1' : '0.1')};
     filter: ${(props) => (props.isActive ? 'brightness(0) invert(1)' : 'none')};
+
+    @media only screen and (max-width: 765px) {
+      opacity: 1;
+      filter: brightness(0) invert(1);
+    }
   }
 `

@@ -13,6 +13,13 @@ export const Container = styled.div<ContainerProps>`
   transform: ${(props) => (props.isActive ? 'translateY(0px)' : 'translateY(-250px)')};
   transition: all 0.4s linear;
 
+  @media only screen and (max-width: 765px) {
+    padding: 120px 20px;
+    margin-top: 100px;
+    /* opacity: ${(props) => (props.isActive ? '1' : '0')}; */
+    transform: translateY(0px);
+  }
+
   label {
     font-family: 'Nunito';
     font-weight: 700;
@@ -24,6 +31,10 @@ export const Container = styled.div<ContainerProps>`
     text-align: center;
     display: block;
 
+    @media only screen and (max-width: 765px) {
+      text-align: left;
+    }
+
     &:after {
       content: '';
       left: calc(50% + 120px);
@@ -31,7 +42,14 @@ export const Container = styled.div<ContainerProps>`
       border-bottom: solid 1px;
       margin-top: 10px;
       position: absolute;
-      opacity: 0.1;
+      opacity: 0.3;
+
+      @media only screen and (max-width: 765px) {
+        text-align: left;
+        left: initial;
+        width: calc(100vw - 250px);
+        margin-left: 20px;
+      }
     }
   }
 
@@ -43,10 +61,21 @@ export const Container = styled.div<ContainerProps>`
     max-width: 600px;
     margin: 34px auto 70px auto;
 
+    @media only screen and (max-width: 765px) {
+      text-align: left;
+    }
+
     &::after {
       content: '.';
       color: #23D4AA;
     }
+  }
+
+  p {
+    @media only screen and (max-width: 765px) {
+      margin-top: 0;
+      margin-bottom: 40px;
+    } 
   }
 
   @keyframes slidedown {
@@ -73,4 +102,8 @@ export const List = styled.div<ListProps>`
   opacity: ${(props) => (props.isActive ? '1' : '0')};
   transform: ${(props) => (props.isActive ? 'translateY(0px)' : 'translateY(-250px)')};
   transition: all 0.4s linear;
+
+  @media only screen and (max-width: 765px) {
+    display: block;
+  }
 `
