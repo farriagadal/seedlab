@@ -31,7 +31,10 @@ const HowWorks = () => {
 
   useEffect(() => {
     const observer: any = new IntersectionObserver(function(entries) {
-      setIsShow(entries[0].intersectionRatio === 1)
+      // setIsShow(entries[0].intersectionRatio === 1)
+      if (entries[0].intersectionRatio === 1) {
+        setIsShow(true)
+      }
     }, { threshold: 1 })
     observer.observe(document.querySelector('#howworks'))
   }, [])

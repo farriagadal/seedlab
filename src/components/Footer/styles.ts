@@ -15,6 +15,9 @@ export const Container = styled.div`
     font-size: 14px;
     letter-spacing: 0.04em;
     color: #70828A;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 `
 

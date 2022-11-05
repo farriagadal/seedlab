@@ -27,6 +27,10 @@ export const Container = styled.div<ContainerProps>`
     color: #FFFFFF;
     text-align: center;
     margin: 20px 0;
+    &::after {
+      content: '.';
+      color: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
+    }
   }
 
   p {

@@ -37,7 +37,10 @@ const Techs = () => {
   useEffect(() => {
     const observer: any = new IntersectionObserver(function(entries) {
       setIsShow(entries[0].intersectionRatio === 1)
-    }, { threshold: 0.5 })
+      // if (entries[0].intersectionRatio === 1) {
+      //   setIsShow(true)
+      // }
+    }, { threshold: 1 })
     observer.observe(document.querySelector('#techs'))
   }, [])
 

@@ -4,7 +4,7 @@ export const Container = styled.div`
   max-width: var(--container-width);
   margin: auto;
   color: white;
-  height: 750px;
+  height: 700px;
   padding-top: 70px;
 
   h2 {

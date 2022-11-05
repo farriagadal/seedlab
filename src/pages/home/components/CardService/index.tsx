@@ -10,7 +10,7 @@ const CardService = () => {
   return (
     <Container isActive={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <IconWeb />
-      <h4>Servicio lorem ipsum dolor.</h4>
+      <h4>Servicio lorem ipsum dolor</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
       </p>
