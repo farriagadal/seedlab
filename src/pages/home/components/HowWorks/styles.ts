@@ -12,11 +12,11 @@ export const Container = styled.div<ContainerProps>`
   opacity: ${(props) => (props.isActive ? '1' : '0')};
   transform: ${(props) => (props.isActive ? 'translateY(0px)' : 'translateY(-250px)')};
   transition: all 0.4s linear;
+  overflow: hidden;
 
   @media only screen and (max-width: 765px) {
     padding: 120px 20px;
-    margin-top: 100px;
-    /* opacity: ${(props) => (props.isActive ? '1' : '0')}; */
+    opacity: 1;
     transform: translateY(0px);
   }
 
@@ -105,5 +105,7 @@ export const List = styled.div<ListProps>`
 
   @media only screen and (max-width: 765px) {
     display: block;
+    opacity: 1;
+    transform: translateY(0px);
   }
 `

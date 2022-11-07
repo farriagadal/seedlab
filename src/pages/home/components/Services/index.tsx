@@ -1,21 +1,24 @@
 import CardService from '../CardService'
 import { Container, List } from './styles'
-import IconWeb from 'public/icons/web-icon.svg'
+import IconWeb1 from 'public/icons/how-work-1.svg'
+import IconWeb2 from 'public/icons/how-work-2.svg'
+import IconWeb3 from 'public/icons/web-icon.svg'
+import IconWeb4 from 'public/icons/how-work-3.svg'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 
 const cardServices = [
   {
-    Icon: IconWeb,
+    Icon: IconWeb1,
   },
   {
-    Icon: IconWeb,
+    Icon: IconWeb2,
   },
   {
-    Icon: IconWeb,
+    Icon: IconWeb1,
   },
   {
-    Icon: IconWeb,
+    Icon: IconWeb4,
   }
 ]
 
@@ -43,10 +46,11 @@ const Services = () => {
             },
           },
         }}>
-          <SplideSlide><CardService /></SplideSlide>
-          <SplideSlide><CardService /></SplideSlide>
-          <SplideSlide><CardService /></SplideSlide>
-          <SplideSlide><CardService /></SplideSlide>
+          {cardServices.map((card, index) => (
+            <SplideSlide key={index}>
+              <CardService Icon={card.Icon} />
+            </SplideSlide>
+          ))}
         </Splide>
         {/* <CardService />
         <CardService />

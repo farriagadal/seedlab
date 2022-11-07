@@ -74,3 +74,44 @@ export const MenuOption = styled.div`
   letter-spacing: 0.1em;
   margin-left: 76px;
 `
+
+export const ContactBtn = styled.div`
+  background: #021720;
+  border: 1px solid #23D4AA;
+  border-radius: 0px 20px;
+  width: 188px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  transform: rotate(-90deg);
+  z-index: 1111;
+  position: fixed;
+  bottom: 30vh;
+  right: -30px;
+
+  &:hover {
+    background: #23D4AA;
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  span {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  img {
+    margin-right: 18px;
+    transform: rotate(90deg);
+    transition: all 0.2s;
+  }
+`

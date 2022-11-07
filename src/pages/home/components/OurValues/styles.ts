@@ -15,8 +15,10 @@ export const Section = styled.div<SectionProps>`
 
 
   @media only screen and (max-width: 765px) {
-    max-height: 700px;
+    max-height: initial;
+    height: initial;
     background: none;
+
   }
 `
 

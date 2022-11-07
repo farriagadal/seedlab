@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Container, Logo, MenuOption } from './styles'
+import { Container, Logo, MenuOption, ContactBtn } from './styles'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 
@@ -8,13 +8,6 @@ const NavDesktop = () => {
 
   useEffect(() => {
     const observer: any = new IntersectionObserver(function(entries) {
-      // // no intersection with screen
-      // if(entries[0].intersectionRatio === 0)
-      //   console.log('arriba')
-      // // fully intersects with screen
-      // else if(entries[0].intersectionRatio === 1)
-      //   setIsTop(true)
-
       setIsTop(entries[0].intersectionRatio === 1)
     }, { threshold: [0,1] })
 
@@ -43,6 +36,13 @@ const NavDesktop = () => {
           <MenuOption><Link href="#">Tecnologías</Link></MenuOption>
         </nav>
       </Container>
+      <Link href="/" className="short-logo-black">
+        <ContactBtn>
+          <Image src='/icons/contact-icon.svg' alt="Contact Icon" width={16} height={16} />
+          <span>Contáctanos</span>
+        </ContactBtn>
+      </Link>
+
     </>
     
 

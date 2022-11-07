@@ -60,14 +60,6 @@ export const Container = styled.div<ContainerProps>`
     }
   }
 
-  svg, path{
-    stroke: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
-
-    @media only screen and (max-width: 765px) {
-      stroke: #021720;
-    }
-  }
-
   @keyframes appear {
     0% {
       opacity: 0;
@@ -85,6 +77,22 @@ export const Container = styled.div<ContainerProps>`
     left: 0;
     width: 100%;
     height: 100%;
+  }
+`
+
+export const IconWrapper = styled.div<IconMoreProps>`
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg, path{
+    stroke: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
+    fill: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
+
+    @media only screen and (max-width: 765px) {
+      stroke: #021720;
+    }
   }
 `
 

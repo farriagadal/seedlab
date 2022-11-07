@@ -1,16 +1,13 @@
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import NavDesktop from '../NavDesktop'
 import NavMobile from '../NavMobile'
 
 const Header = () => {
-  let isMobile = true
+  const [isMobile, setIsMobile] = useState(true)
 
   useEffect(() => {
-    setTimeout(() => {
-      isMobile = window.innerWidth < 768
-    }, 4000)
-
+    setIsMobile(window.innerWidth < 768)
   }, [])
   
   return (
