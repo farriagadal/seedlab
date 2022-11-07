@@ -43,6 +43,7 @@ const Services = () => {
               flickPower: 10,
               perPage: 1,
               drag: true,
+              padding: { right: '20px' }
             },
           },
         }}>

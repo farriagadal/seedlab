@@ -46,7 +46,13 @@ export const Text = styled.div`
       border-bottom: solid 1px;
       margin-top: 10px;
       position: absolute;
-      opacity: 0.1;
+      opacity: 0.3;
+
+      @media only screen and (max-width: 765px) {
+        text-align: left;
+        left: auto;
+        right: 0;
+        width: calc(100vw - 190px);
     }
   }
 

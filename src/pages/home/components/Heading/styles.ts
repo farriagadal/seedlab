@@ -19,6 +19,7 @@ export const Container = styled.div`
     padding-bottom: 72px;
     border-top-left-radius: 90px;
     margin-left: 20px;
+    margin-top: 76px;
   }
 
   p {
