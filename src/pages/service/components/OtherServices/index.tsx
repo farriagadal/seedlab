@@ -8,22 +8,22 @@ import IconWeb3 from 'public/icons/web-icon.svg'
 import IconWeb4 from 'public/icons/how-work-3.svg'
 
 
-type ServicesProps = {
+type OtherServicesProps = {
   services: any[]
   title: string
 }
 
-const Services = ({services, title}: ServicesProps) => {
+const OtherServices = ({services, title}: OtherServicesProps) => {
   return (
     <Container>
       <h2>{title}</h2>
       <List>
         <Splide options={{
-          perPage: 4,
+          perPage: 3,
           rewind: false,
           arrows: false,
           width : '100%',
-          gap   : '30px',
+          gap   : '90px',
           pagination: false,
           drag: false,
           // dragMinThreshold: 0,
@@ -32,6 +32,7 @@ const Services = ({services, title}: ServicesProps) => {
             640 : {
               dragMinThreshold: 10,
               flickPower: 10,
+              gap: '30px',
               perPage: 1,
               drag: true,
               padding: { right: '20px' }
@@ -53,4 +54,4 @@ const Services = ({services, title}: ServicesProps) => {
   )
 }
 
-export default Services
+export default OtherServices

@@ -53,6 +53,7 @@ export const Text = styled.div`
         left: auto;
         right: 0;
         width: calc(100vw - 190px);
+      }
     }
   }
 

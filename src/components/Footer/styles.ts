@@ -13,6 +13,7 @@ export const Container = styled.div`
 
   
   @media only screen and (max-width: 765px) {
+    width: calc(100% - 40px);
     display: grid;
     justify-items: center;
     justify-content: center;

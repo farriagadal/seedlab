@@ -6,12 +6,13 @@ import Link from 'next/link'
 type CardServiceProps = {
   Icon: any,
   title?: string,
-  description?: string
+  description?: string,
+  url?: string
 }
 
 
-const CardService = ({ Icon, title, description }: CardServiceProps) => {
-  const [isHover, setIsHover] = useState(true)
+const CardService = ({ Icon, title, description, url = '/' }: CardServiceProps) => {
+  const [isHover, setIsHover] = useState(false)
   
   return (
     <Container isActive={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
@@ -23,7 +24,7 @@ const CardService = ({ Icon, title, description }: CardServiceProps) => {
       <IconMore isActive={isHover}>
         <Image src='/icons/more-icon.svg' alt="Web Logo" width={25} height={25} />
       </IconMore>
-      <Link href='/' />
+      <Link href={url} />
     </Container>
   )
 }

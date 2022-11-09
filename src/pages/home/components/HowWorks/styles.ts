@@ -12,7 +12,7 @@ export const Container = styled.div<ContainerProps>`
   opacity: ${(props) => (props.isActive ? '1' : '0')};
   transform: ${(props) => (props.isActive ? 'translateY(0px)' : 'translateY(-250px)')};
   transition: all 0.4s linear;
-  overflow: hidden;
+  /* overflow: hidden; */
 
   @media only screen and (max-width: 765px) {
     padding: 120px 20px;
@@ -76,17 +76,6 @@ export const Container = styled.div<ContainerProps>`
       margin-top: 0;
       margin-bottom: 40px;
     } 
-  }
-
-  @keyframes slidedown {
-    0% {
-      opacity: 0;
-      transform: translateY(-100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0px);
-    }
   }
 `
 

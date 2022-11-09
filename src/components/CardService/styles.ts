@@ -92,6 +92,7 @@ export const IconWrapper = styled.div<IconMoreProps>`
 
     @media only screen and (max-width: 765px) {
       stroke: #021720;
+      fill: #021720;
     }
   }
 `
