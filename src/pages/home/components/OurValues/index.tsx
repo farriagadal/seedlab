@@ -9,7 +9,7 @@ const OurValues = () => {
   useEffect(() => {
     const observer: any = new IntersectionObserver(function(entries) {
       setIsShow(entries[0].intersectionRatio === 1)
-    }, { threshold: 1 })
+    }, { threshold: [0, 1] })
     observer.observe(document.querySelector('#ourvalues'))
   }, [])
 

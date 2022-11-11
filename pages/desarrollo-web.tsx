@@ -27,11 +27,9 @@ export default function Home() {
       <Head>
         <title>SEEDLAB.CL - Desarrollo Web</title>
       </Head>
-      <Header />
       <Heading />
       <Content />
       <OtherServices title="Otros servicios" services={cardServices} />
-      <Footer />
     </div>
   )
 }

@@ -10,10 +10,8 @@ export default function ContactPage() {
       <Head>
         <title>SEEDLAB.CL - Contácto</title>
       </Head>
-      <Header />
       <Heading />
       <FormContact />
-      <Footer />
     </div>
   )
 }
