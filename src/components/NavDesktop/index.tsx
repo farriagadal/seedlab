@@ -36,7 +36,7 @@ const NavDesktop = () => {
           <MenuOption><Link href="#">Tecnologías</Link></MenuOption>
         </nav>
       </Container>
-      <Link href="/">
+      <Link href="/contacto">
         <ContactBtn>
           <Image src='/icons/contact-icon.svg' alt="Contact Icon" width={16} height={16} />
           <span>Contáctanos</span>
