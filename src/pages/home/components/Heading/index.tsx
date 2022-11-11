@@ -37,7 +37,7 @@ const Heading = () => {
           </SplideSlide>
         </Splide>
       </Container>
-      <ArrowDown>
+      <ArrowDown href="/#services">
         <Image src='/icons/arrow-down.svg' alt="Arrow Down" fill />
       </ArrowDown>
     </>

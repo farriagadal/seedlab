@@ -7,6 +7,7 @@ import IconWeb4 from 'public/icons/how-work-3.svg'
 import ContactServices from 'src/pages/contact/components/ContactServices'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
+import emailjs from 'emailjs-com'
 
 const cardServices = [
   {
@@ -30,7 +31,12 @@ const FormContact = () => {
 
   const onSubmit = (data: any) =>{
     console.log(data)
-    router.push('/gracias')
+    emailjs.send('gmail', 'template_r70dzna', data, 'user_Z9ZA15CBTB3P6Kw6xRIeQ')
+      .then(() => {
+        router.push('/gracias')
+      }, () => {
+        router.push('/error')
+      })
   }
 
   const handleError = () => {

@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Footer from 'src/components/Footer'
-import Header from 'src/components/Header'
 import Content from 'src/pages/service/components/Content'
 import Heading from 'src/pages/service/components/Heading'
 import IconWeb1 from 'public/icons/how-work-1.svg'
@@ -12,12 +10,15 @@ import OtherServices from 'src/pages/service/components/OtherServices'
 const cardServices = [
   {
     Icon: IconWeb2,
+    url: '/desarrollo-web'
   },
   {
     Icon: IconWeb1,
+    url: '/desarrollo-web'
   },
   {
     Icon: IconWeb4,
+    url: '/desarrollo-web'
   }
 ]
 

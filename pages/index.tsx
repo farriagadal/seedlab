@@ -16,12 +16,15 @@ const cardServices = [
   },
   {
     Icon: IconWeb2,
+    url: '/desarrollo-web'
   },
   {
     Icon: IconWeb1,
+    url: '/desarrollo-web'
   },
   {
     Icon: IconWeb4,
+    url: '/desarrollo-web'
   }
 ]
 

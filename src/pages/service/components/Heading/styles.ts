@@ -106,7 +106,7 @@ export const BackBtn = styled.div`
   }
 `
 
-export const ArrowDown = styled.button`
+export const ArrowDown = styled.a`
   position: absolute;
   background: none;
   border: none;
@@ -119,6 +119,7 @@ export const ArrowDown = styled.button`
   top: 5px;
   background: #021720;
   z-index: 1;
+  text-align: center;
 
   @media only screen and (max-width: 765px) {
     top: -70px;

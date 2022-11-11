@@ -17,7 +17,7 @@ const Heading = () => {
         <Link href="/"><BackBtn>
           <Image src="/icons/back-arrow.svg" alt="Back" width={21} height={18} /> Volver
         </BackBtn></Link>
-        <ArrowDown>
+        <ArrowDown href="#content">
           <Image src='/icons/arrow-down.svg' alt="Arrow Down" width={45} height={45} />
         </ArrowDown>
       </Bar>

@@ -137,7 +137,7 @@ export const BgImg = styled.div<BgImgProps>`
   }
 `
 
-export const ArrowDown = styled.button`
+export const ArrowDown = styled.a`
   position: relative;
   background: none;
   border: none;

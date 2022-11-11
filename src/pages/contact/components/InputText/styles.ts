@@ -22,8 +22,17 @@ export const Container = styled.div<ContainerProps>`
     padding: 0;
     z-index: 1;
     position: relative;
-    border-color: ${(props) => (props.error ? 'red' : '#23D4AA')};
+    border-color: ${(props) => (props.error ? '#FF004C' : '#23D4AA')};
     transition: all 0.3s ease-in-out;
+    border-radius: 0;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: #fff !important;
+    }
 
     &:active, &:focus {
       outline: none;
