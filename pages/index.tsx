@@ -9,22 +9,28 @@ import IconWeb2 from 'public/icons/how-work-2.svg'
 import IconWeb4 from 'public/icons/how-work-3.svg'
 
 
+
+
 const cardServices = [
   {
+    title: 'Sitios web corporativos',
     Icon: IconWeb1,
     url: '/desarrollo-web'
   },
   {
+    title: 'Software a medida (SAAS)',
     Icon: IconWeb2,
-    url: '/desarrollo-web'
+    url: '/software-a-medida'
   },
   {
+    title: 'Aplicaciones móviles',
     Icon: IconWeb1,
-    url: '/desarrollo-web'
+    url: '/apliaciones-moviles'
   },
   {
+    title: 'Asesoría en tecnología',
     Icon: IconWeb4,
-    url: '/desarrollo-web'
+    url: '/asesoria-tecnologica'
   }
 ]
 

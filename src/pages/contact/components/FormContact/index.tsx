@@ -11,15 +11,19 @@ import emailjs from 'emailjs-com'
 
 const cardServices = [
   {
+    title: 'Sitios web corporativos',
     Icon: IconWeb1,
   },
   {
+    title: 'Software a medida (SAAS)',
     Icon: IconWeb2,
   },
   {
+    title: 'Aplicaciones móviles',
     Icon: IconWeb1,
   },
   {
+    title: 'Asesoría en tecnología',
     Icon: IconWeb4,
   }
 ]
@@ -27,11 +31,16 @@ const cardServices = [
 const FormContact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm({ mode: 'all', reValidateMode: 'onChange', })
   const [isIntialited, setIsIntialited] = useState(false)
+  const [servicesSelected, setServicesSelected] = useState<any[]>([])
   const router = useRouter()
 
   const onSubmit = (data: any) =>{
     console.log(data)
-    emailjs.send('gmail', 'template_r70dzna', data, 'user_Z9ZA15CBTB3P6Kw6xRIeQ')
+    const templateParams = {
+      ...data,
+      services: servicesSelected.join(', ')
+    }
+    emailjs.send('gmail', 'template_r70dzna', templateParams, 'user_Z9ZA15CBTB3P6Kw6xRIeQ')
       .then(() => {
         router.push('/gracias')
       }, () => {
@@ -76,7 +85,7 @@ const FormContact = () => {
             error={errors.email?.message}
           />
         </Fields>
-        <ContactServices services={cardServices} />
+        <ContactServices services={cardServices} servicesSelected={servicesSelected} onChange={setServicesSelected} />
         <BtnContact isDisabled={Object.keys(errors).length !== 0 && isIntialited} type='submit'>COTIZAR SERVICIO</BtnContact>
       </form>
     </Container>

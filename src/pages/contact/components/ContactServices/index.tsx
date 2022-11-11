@@ -3,12 +3,23 @@ import { Container, List } from './styles'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
 import CardService from '../CardService'
+import { useState } from 'react'
 
 type ContactServicesProps = {
-  services: any[]
+  services: any[],
+  servicesSelected: any[],
+  onChange: (data: any[]) => void
 }
 
-const ContactServices = ({services}: ContactServicesProps) => {
+const ContactServices = ({services, onChange}: ContactServicesProps) => {
+  const [servicesSelected, setServicesSelected] = useState<any[]>([])
+
+  const handleService = (service: string) => {
+    const newServices = servicesSelected.includes(service) ? servicesSelected.filter(s => s !== service) : [...servicesSelected, service]
+    setServicesSelected(newServices)
+    onChange(newServices)
+  }
+
   return (
     <Container>
       <h2>Selecciona un servicio</h2>
@@ -36,14 +47,10 @@ const ContactServices = ({services}: ContactServicesProps) => {
         }}>
           {services.map((card, index) => (
             <SplideSlide key={index}>
-              <CardService {...card} />
+              <CardService {...card} onChange={handleService}  />
             </SplideSlide>
           ))}
         </Splide>
-        {/* <CardService />
-        <CardService />
-        <CardService />
-        <CardService /> */}
       </List>
     </Container>
   )

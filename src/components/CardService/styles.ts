@@ -11,7 +11,7 @@ export const Container = styled.div<ContainerProps>`
   overflow: hidden;
   display: block;
   text-align: center;
-  padding: 42px 38px;
+  padding: 42px 25px;
   background: ${(props) => (props.isActive ? '#23D4AA' : 'none')};
   min-height: 340px;
   height: 480px;
