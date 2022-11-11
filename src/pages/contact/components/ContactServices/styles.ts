@@ -18,7 +18,7 @@ export const Container = styled.div`
     line-height: 45px;
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 `

@@ -37,7 +37,7 @@ export const Text = styled.div`
     line-height: 25px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #23D4AA;
+    color: var(--color-2);
 
     &:before {
       content: '';
@@ -63,7 +63,7 @@ export const Text = styled.div`
     letter-spacing: 0.04em;
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 
@@ -92,7 +92,7 @@ export const Tech = styled.div`
   position: relative;
   width: 252px;
   height: 164px;
-  background: #FFFFFF;
+  background: var(--color-3);
   border-radius: 30px 0px;
 
   @media only screen and (max-width: 765px) {

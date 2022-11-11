@@ -17,7 +17,7 @@ export const Container = styled.div`
     margin-bottom: 75px;
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
 
     @media only screen and (max-width: 765px) {

@@ -8,7 +8,7 @@ type SectionProps = {
 export const Section = styled.div<SectionProps>`
   height: 940px;
   max-height: ${(props) => (props.isActive ? '940px' : '700px')};
-  background: ${(props) => (props.isActive ? '#23D4AA' : 'none')};
+  background: ${(props) => (props.isActive ? 'var(--color-2)' : 'none')};
   transition: max-height 0.3s linear, background 1.5s linear;
   display: grid;
   margin-top: 80px;
@@ -46,7 +46,7 @@ export const BgImg = styled.div<BgImgProps>`
   height: 500px;
   border-top-left-radius: 110px;
   border-bottom-right-radius: 110px;
-  background: #021720;
+  background: var(--color-1);
   box-shadow: 0px 30px 100px rgba(18, 7, 35, 0.1);
   z-index: 1;
 
@@ -93,10 +93,10 @@ export const Text = styled.div<TextProps>`
     line-height: 25px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
+    color: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
 
     @media only screen and (max-width: 765px) {
-      color: #23D4AA;
+      color: var(--color-2);
       margin-left: 18px;
     }
 
@@ -119,7 +119,7 @@ export const Text = styled.div<TextProps>`
     line-height: 100%;
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 

@@ -27,7 +27,7 @@ export const Container = styled.div<ContainerProps>`
     line-height: 25px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #23D4AA;
+    color: var(--color-2);
     text-align: center;
     display: block;
 
@@ -67,7 +67,7 @@ export const Container = styled.div<ContainerProps>`
 
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 

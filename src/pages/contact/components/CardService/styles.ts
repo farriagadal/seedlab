@@ -14,12 +14,12 @@ export const Container = styled.div<ContainerProps>`
   text-align: center;
   padding: 40px 10px;
   height: 253px;
-  border: 1px solid #072C3C;
+  border: 1px solid var(--color-4);
   transition: border-color 0.2s ease-in, filter 0.2s;
-  border-color: ${(props) => (props.isActive ? '#23D4AA' : '#072C3C')};
+  border-color: ${(props) => (props.isActive ? 'var(--color-2)' : 'var(--color-4)')};
   
   &:hover {
-    border-color: #23D4AA;
+    border-color: var(--color-2);
   }
 
   &:active {
@@ -36,7 +36,7 @@ export const Container = styled.div<ContainerProps>`
     display: flex;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-3);
     justify-content: center;
   }
 

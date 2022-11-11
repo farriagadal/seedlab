@@ -24,7 +24,7 @@ export const Container = styled.div`
   }
 
   ul {
-    background: #23D4AA;
+    background: var(--color-2);
     border-radius: 30px 0px;
     padding: 60px;
     margin: 70px -60px;
@@ -43,7 +43,7 @@ export const Container = styled.div`
       font-size: 18px;
       line-height: 160%;
       letter-spacing: 0.04em;
-      color: #FFFFFF;
+      color: var(--color-3);
       margin-bottom: 34px;
       padding-left: 60px;
 
@@ -71,8 +71,8 @@ export const Container = styled.div`
 `
 export const BtnContact = styled.div`
   margin-top: 47px;
-  background: #021720;
-  border: 1px solid #23D4AA;
+  background: var(--color-1);
+  border: 1px solid var(--color-2);
   border-radius: 20px 0px;
   width: 214px;
   height: 58px;
@@ -84,17 +84,17 @@ export const BtnContact = styled.div`
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
-  color: #FFFFFF;
+  color: var(--color-3);
 
   &:hover {
-    background: #23D4AA;
+    background: var(--color-2);
   }
 `
 
 export const Divider = styled.div`
   width: var(--container-width);
   margin: auto;
-  border-bottom: 1px solid #072C3C;
+  border-bottom: 1px solid var(--color-4);
 
   
   @media only screen and (max-width: 765px) {

@@ -5,14 +5,14 @@ type ContainerProps = {
 }
 
 export const Container = styled.div<ContainerProps>`
-  border: 1px solid #072C3C;
+  border: 1px solid var(--color-4);
   position: relative;
   border-radius: 50px 0px 0px 0px;
   overflow: hidden;
   display: block;
   text-align: center;
   padding: 42px 25px;
-  background: ${(props) => (props.isActive ? '#23D4AA' : 'none')};
+  background: ${(props) => (props.isActive ? 'var(--color-2)' : 'none')};
   min-height: 340px;
   height: 480px;
   max-height: ${(props) => (props.isActive ? '480px' : '340px')};
@@ -21,7 +21,7 @@ export const Container = styled.div<ContainerProps>`
 
 
   @media only screen and (max-width: 765px) {
-    background: #23D4AA;
+    background: var(--color-2);
     max-height: 480px;
     transform: translateY(-60px);
   }
@@ -31,15 +31,15 @@ export const Container = styled.div<ContainerProps>`
     font-weight: 800;
     font-size: 26px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: var(--color-3);
     text-align: center;
     margin: 20px 0;
     &::after {
       content: '.';
-      color: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
+      color: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
 
       @media only screen and (max-width: 765px) {
-        color: #021720;
+        color: var(--color-1);
       }
     }
   }
@@ -50,7 +50,7 @@ export const Container = styled.div<ContainerProps>`
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.04em;
-    color: #021720;
+    color: var(--color-1);
     opacity: 0.7;
     display: ${(props) => (props.isActive ? 'block' : 'none')};
     animation: 0.2s appear linear;
@@ -87,12 +87,12 @@ export const IconWrapper = styled.div<IconMoreProps>`
   justify-content: center;
 
   svg, path{
-    stroke: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
-    fill: ${(props) => (props.isActive ? '#021720' : '#23D4AA')};
+    stroke: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
+    fill: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
 
     @media only screen and (max-width: 765px) {
-      stroke: #021720;
-      fill: #021720;
+      stroke: var(--color-1);
+      fill: var(--color-1);
     }
   }
 `

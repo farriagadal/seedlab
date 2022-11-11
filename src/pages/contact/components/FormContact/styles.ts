@@ -12,14 +12,14 @@ export const Container = styled.div`
   }
 
   h2 {
-    color: #fff;
+    color: var(--color-3);
     margin-bottom: 25px;
     font-size: 30px;
     line-height: 45px;
 
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 `
@@ -43,7 +43,7 @@ type BtnContactProps = {
 export const BtnContact = styled.button<BtnContactProps>`
   margin-top: 40px;
   background: none;
-  border: 1px solid #23D4AA;
+  border: 1px solid var(--color-2);
   border-radius: 20px 0px;
   width: 214px;
   height: 58px;
@@ -55,12 +55,12 @@ export const BtnContact = styled.button<BtnContactProps>`
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
-  color: #FFFFFF;
+  color: var(--color-3);
   cursor: ${(props: BtnContactProps) => props.isDisabled ? 'none' : 'pointer'};
   filter: ${(props: BtnContactProps) => props.isDisabled ? 'brightness(0.5) grayscale(1)' : 'none'};
 
   &:hover {
-    background: #23D4AA;
+    background: var(--color-2);
   }
   @media only screen and (max-width: 765px) {
     margin-left: 20px;

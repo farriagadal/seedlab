@@ -30,7 +30,7 @@ export const BgImg = styled.div`
     top: 0;
     animation: opacityless linear 5s;
     opacity: 0.5;
-    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,#021720 100%);
+    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,var(--color-1) 100%);
     z-index: 1;
   }
 
@@ -84,12 +84,12 @@ export const Text = styled.div`
     font-weight: 800;
     font-size: 46px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: var(--color-3);
     max-width: 457px;
 
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 
@@ -98,7 +98,7 @@ export const Text = styled.div`
     font-size: 18px;
     line-height: 160%;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--color-3);
     padding-right: 42px;
     margin-bottom: 0;
   }
@@ -121,7 +121,7 @@ export const Bar = styled.div`
     left: 0;
     top: 9px;
     width: 100%;
-    border-bottom: 1px solid #072C3C;
+    border-bottom: 1px solid var(--color-4);
 
     @media only screen and (max-width: 765px) {
       left: 20px;
@@ -138,10 +138,10 @@ export const BackBtn = styled.div`
   line-height: 19px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--color-3);
   display: flex;
   align-items: center;
-  background: #021720;
+  background: var(--color-1);
   z-index: 1;
   position: relative;
   width: fit-content;

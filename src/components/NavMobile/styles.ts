@@ -6,7 +6,7 @@ export const Container = styled.div`
   position: sticky;
   top: 24px;
   z-index: 111;
-  /* background: #021720;
+  /* background: var(--color-1);
   transition: background 0.2s ease-in-out; */
 `
 export const Isotipo = styled.div`
@@ -23,7 +23,7 @@ export const MenuButton = styled.button`
   position: fixed;
   bottom: 0px;
   right: 0px;
-  background: #23D4AA;
+  background: var(--color-2);
   border-radius: 16px 0px 0px 0px;
   width: 60px;
   height: 60px;
@@ -38,7 +38,7 @@ export const MenuButton = styled.button`
 `
 
 export const MenuList = styled.div`
-  background: #23D4AA;
+  background: var(--color-2);
   width: 275px;
   position: fixed;
   bottom: 0px;
@@ -56,7 +56,7 @@ export const MenuList = styled.div`
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.1em;
-    color: #021720;
+    color: var(--color-1);
   }
 
   @keyframes slideleft {
@@ -83,29 +83,29 @@ export const CloseBtn = styled.div`
 `
 
 export const ContactBtn = styled.div`
-  background: #021720;
-  border: 1px solid #23D4AA;
+  background: var(--color-1);
+  border: 1px solid var(--color-2);
   border-radius: 0px 20px;
   width: 188px;
   height: 61px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #23D4AA;
+  border: 1px solid var(--color-2);
 
   span {
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: var(--color-3);
     display: block;
     margin-right: 20px;
   }
 
   &:hover {
-    background: #23D4AA;
-    border-color: #021720;
+    background: var(--color-2);
+    border-color: var(--color-1);
 
     img {
       filter: brightness(0) invert(1);

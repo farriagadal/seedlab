@@ -5,11 +5,25 @@
   font-family: 'Nunito', sans-serif;
 }
 
+:root {
+  --container-width: 1238px;
+  --content-width: 816px;
+
+  --color-1: #021720; 
+  --color-2: #23D4AA;
+  --color-3: #fff;
+  --color-4: #072C3C;
+  --color-5: #70828A;
+  --color-6: #031821;
+  --color-7: #FF004C;
+  --color-8: #395B69; /* solo para input label */
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  background: #021720;
+  background: var(--color-1);
 }
 
 html {
@@ -68,11 +82,6 @@ p {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-:root {
-  --container-width: 1238px;
-  --content-width: 816px;
 }
 
 

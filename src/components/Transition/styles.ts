@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #072C3C;
+  border-top: 1px solid var(--color-4);
   padding: 60px 0;
   position: relative;
 
@@ -24,7 +24,7 @@ export const Container = styled.div`
     font-weight: 300;
     font-size: 14px;
     letter-spacing: 0.04em;
-    color: #70828A;
+    color: var(--color-5);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

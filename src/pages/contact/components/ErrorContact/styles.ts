@@ -37,7 +37,7 @@ export const BgImg = styled.div`
     top: 0;
     animation: opacityless linear 5s;
     opacity: 0.5;
-    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,#021720 100%);
+    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,var(--color-1) 100%);
     z-index: 1;
   }
 
@@ -82,7 +82,7 @@ export const Text = styled.div`
     font-size: 18px;
     line-height: 160%;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--color-3);
     padding-right: 42px;
     margin-bottom: 0;
   }
@@ -106,7 +106,7 @@ export const Title = styled.div`
     font-weight: 800;
     font-size: 46px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: var(--color-3);
     max-width: 457px;
 
     @media only screen and (max-width: 765px) {
@@ -116,7 +116,7 @@ export const Title = styled.div`
 
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 
@@ -125,7 +125,7 @@ export const Title = styled.div`
 export const BtnContact = styled.button`
   margin-top: 40px;
   background: none;
-  border: 1px solid #23D4AA;
+  border: 1px solid var(--color-2);
   border-radius: 20px 0px;
   width: 214px;
   height: 58px;
@@ -137,10 +137,10 @@ export const BtnContact = styled.button`
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
-  color: #FFFFFF;
+  color: var(--color-3);
   cursor: 'pointer';
 
   &:hover {
-    background: #23D4AA;
+    background: var(--color-2);
   }
 `

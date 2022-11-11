@@ -19,7 +19,7 @@ export const Container = styled.div<ContainerProps>`
   h4 {
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 `
@@ -40,7 +40,7 @@ export const Title = styled.div`
     font-family: 'Poppins';
     font-weight: 300;
     font-size: 60px;
-    color: #072C3C;
+    color: var(--color-4);
   }
 
   h4 {

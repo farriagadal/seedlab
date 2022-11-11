@@ -5,7 +5,7 @@ export const Container = styled.div`
   //
   position: relative;
   margin-top: 175px;
-  background: linear-gradient(100.79deg, #23D4AA 6.96%, #021720 98.01%);
+  background: linear-gradient(100.79deg, var(--color-2) 6.96%, var(--color-1) 98.01%);
   max-width: calc(100vw - ((100vw - var(--container-width)) / 2));
   margin-left: calc((100vw - var(--container-width)) / 2);
   padding-top: 92px;
@@ -45,7 +45,7 @@ export const Container = styled.div`
 
     &::after {
       content: '.';
-      color: #021720;
+      color: var(--color-1);
     }
   }
 
@@ -87,7 +87,7 @@ export const BgImg = styled.div<BgImgProps>`
   right: calc((99vw - var(--container-width)) / 2);
   border-top-left-radius: 110px;
   border-bottom-right-radius: 110px;
-  background: #021720;
+  background: var(--color-1);
   box-shadow: 0px 30px 100px rgba(18, 7, 35, 0.3);
 
   @media only screen and (max-width: 765px) {
@@ -104,7 +104,7 @@ export const BgImg = styled.div<BgImgProps>`
     top: 0;
     animation: opacityless linear 5s;
     opacity: 0.5;
-    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,#021720 100%);
+    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,var(--color-1) 100%);
     z-index: 1;
   }
 

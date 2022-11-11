@@ -22,7 +22,7 @@ export const Container = styled.div`
     top: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(2, 23, 32, 0) 0%, #021720 100%);
+    background: linear-gradient(180deg, rgba(2, 23, 32, 0) 0%, var(--color-1) 100%);
     background-blend-mode: multiply;
     mix-blend-mode: normal;
     z-index: 1;
@@ -75,7 +75,7 @@ export const Bar = styled.div`
     left: 0;
     top: 9px;
     width: 1130px;
-    border-bottom: 1px solid #072C3C;
+    border-bottom: 1px solid var(--color-4);
 
     @media only screen and (max-width: 765px) {
       width: calc(100vw - 30px);
@@ -91,10 +91,10 @@ export const BackBtn = styled.div`
   line-height: 19px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--color-3);
   display: flex;
   align-items: center;
-  background: #021720;
+  background: var(--color-1);
   z-index: 1;
   position: relative;
   width: fit-content;
@@ -117,7 +117,7 @@ export const ArrowDown = styled.a`
   left: 50%;
   transform: translateX(-50%);
   top: 5px;
-  background: #021720;
+  background: var(--color-1);
   z-index: 1;
   text-align: center;
 
@@ -180,12 +180,12 @@ export const Text = styled.div`
     font-weight: 800;
     font-size: 46px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: var(--color-3);
     max-width: 700px;
 
     &::after {
       content: '.';
-      color: #23D4AA;
+      color: var(--color-2);
     }
   }
 `

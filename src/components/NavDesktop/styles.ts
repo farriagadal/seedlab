@@ -9,7 +9,7 @@ export const Container = styled.div<ContainerProps>`
   position: sticky;
   top: 0;
   z-index: 111;
-  background: #021720;
+  background: var(--color-1);
   transition: background 0.2s ease-in-out;
 
   nav {
@@ -51,7 +51,7 @@ export const Container = styled.div<ContainerProps>`
   }
 
   &:hover {
-    background: ${props => props.isTop ? '#031821' : '#23D4AA'};
+    background: ${props => props.isTop ? 'var(--color-6)' : 'var(--color-2)'};
 
     .short-logo {
       display: none;
@@ -76,8 +76,8 @@ export const MenuOption = styled.div`
 `
 
 export const ContactBtn = styled.div`
-  background: #021720;
-  border: 1px solid #23D4AA;
+  background: var(--color-1);
+  border: 1px solid var(--color-2);
   border-radius: 0px 20px;
   width: 188px;
   height: 61px;
@@ -92,7 +92,7 @@ export const ContactBtn = styled.div`
   right: -30px;
 
   &:hover {
-    background: #23D4AA;
+    background: var(--color-2);
 
     img {
       filter: brightness(0) invert(1);
@@ -106,7 +106,7 @@ export const ContactBtn = styled.div`
     line-height: 18px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--color-3);
   }
 
   img {

@@ -9,8 +9,6 @@ import IconWeb2 from 'public/icons/how-work-2.svg'
 import IconWeb4 from 'public/icons/how-work-3.svg'
 
 
-
-
 const cardServices = [
   {
     title: 'Sitios web corporativos',
