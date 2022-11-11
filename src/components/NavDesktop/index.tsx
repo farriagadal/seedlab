@@ -1,10 +1,13 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link'
 import { Container, Logo, MenuOption, ContactBtn } from './styles'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 const NavDesktop = () => {
   const [isTop, setIsTop] = useState(true)
+  const router = useRouter()
 
   useEffect(() => {
     const observer: any = new IntersectionObserver(function(entries) {
@@ -30,10 +33,22 @@ const NavDesktop = () => {
               <Image src='/icons/short-logo-black.svg' alt="SeedLab Logo" width={133} height={19} />
             </Link>
           </Logo>
-          <MenuOption><Link href="#">Servicios</Link></MenuOption>
-          <MenuOption><Link href="#">Nuestro Valor</Link></MenuOption>
-          <MenuOption><Link href="#">Como trabajamos</Link></MenuOption>
-          <MenuOption><Link href="#">Tecnologías</Link></MenuOption>
+          {
+            router.pathname === '/' ? 
+              <>
+                <MenuOption><a href="/#services">Servicios</a></MenuOption>
+                <MenuOption><a href="/#ourvalues">Nuestro Valor</a></MenuOption>
+                <MenuOption><a href="/#howworks">Como trabajamos</a></MenuOption>
+                <MenuOption><a href="/#techs">Tecnologías</a></MenuOption>
+              </>
+              :
+              <>
+                <MenuOption><Link href="/#services">Servicios</Link></MenuOption>
+                <MenuOption><Link href="/#ourvalues">Nuestro Valor</Link></MenuOption>
+                <MenuOption><Link href="/#howworks">Como trabajamos</Link></MenuOption>
+                <MenuOption><Link href="/#techs">Tecnologías</Link></MenuOption>
+              </>
+          }
         </nav>
       </Container>
       <Link href="/contacto">

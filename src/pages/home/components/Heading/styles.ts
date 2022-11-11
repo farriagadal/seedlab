@@ -94,11 +94,34 @@ export const BgImg = styled.div<BgImgProps>`
     display: none;
   }
 
+  &:after {
+    content: '';
+    display: ${props => props.show ? 'block' : 'none'};
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    animation: opacityless linear 5s;
+    opacity: 0.5;
+    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,#021720 100%);
+    z-index: 1;
+  }
+
   img {
     object-fit: cover;
     animation: expand linear 12s;
     display: ${props => props.show ? 'block' : 'none'};
     transform: scale(1.2);
+  }
+
+  @keyframes opacityless {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
   }
 
   @keyframes expand {

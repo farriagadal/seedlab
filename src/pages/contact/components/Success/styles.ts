@@ -21,7 +21,6 @@ export const BgImg = styled.div`
   overflow: hidden;
   border-radius: 80px 0;
 
-  
   @media only screen and (max-width: 765px) {
     width: 100%;
     min-width: initial;
@@ -29,10 +28,32 @@ export const BgImg = styled.div`
     border-radius: 150px 0;
   }
 
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    animation: opacityless linear 5s;
+    opacity: 0.5;
+    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,#021720 100%);
+    z-index: 1;
+  }
+
   img {
     object-fit: cover;
     animation: expand linear 12s;
     transform: scale(1.2);
+  }
+
+  @keyframes opacityless {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
   }
 
   @keyframes expand {

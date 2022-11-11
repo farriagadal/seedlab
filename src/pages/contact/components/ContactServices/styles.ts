@@ -20,10 +20,6 @@ export const Container = styled.div`
       content: '.';
       color: #23D4AA;
     }
-
-    @media only screen and (max-width: 765px) {
-      margin-bottom: 120px;
-    }
   }
 `
 

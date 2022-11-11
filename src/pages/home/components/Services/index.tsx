@@ -15,7 +15,7 @@ type ServicesProps = {
 
 const Services = ({services, title}: ServicesProps) => {
   return (
-    <Container>
+    <Container id="services">
       <h2>{title}</h2>
       <List>
         <Splide options={{
