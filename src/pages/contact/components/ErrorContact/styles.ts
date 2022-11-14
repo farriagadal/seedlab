@@ -138,7 +138,7 @@ export const BtnContact = styled.button`
   font-size: 12px;
   letter-spacing: 0.1em;
   color: var(--color-3);
-  cursor: 'pointer';
+  cursor: pointer;
 
   &:hover {
     background: var(--color-2);

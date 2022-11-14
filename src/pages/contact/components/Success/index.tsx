@@ -14,7 +14,7 @@ const Success = () => {
             <Image src='/icons/check-circle.svg' alt="Check Icon" width={74} height={74} />
             <h2>Mensaje enviado exitosamente</h2>
           </Title>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+          <p>Gracias por contactarse con nosotros les responderemos a la brevedad. Si tienes alguna pregunta urgente, puedes enviar un correo a <a href="mailto: contacto@seedlab.cl">contacto@seedlab.cl</a></p>
           <Link href="/"><BtnContact>VOLVER AL INICIO</BtnContact></Link>
         </Text>
       </Container>

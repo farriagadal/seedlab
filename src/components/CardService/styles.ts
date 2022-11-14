@@ -86,12 +86,16 @@ export const IconWrapper = styled.div<IconMoreProps>`
   align-items: center;
   justify-content: center;
 
+  svg {
+    max-height: 100%;
+  }
+
   svg, path{
-    stroke: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
+    /* stroke: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')}; */
     fill: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
 
     @media only screen and (max-width: 765px) {
-      stroke: var(--color-1);
+      /* stroke: var(--color-1); */
       fill: var(--color-1);
     }
   }

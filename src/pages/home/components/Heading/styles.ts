@@ -38,6 +38,8 @@ export const Container = styled.div`
     margin-top: 38px;
     margin-bottom: 40px;
     max-width: 565px;
+    font-size: 80px;
+    line-height: 100%;
 
     @media only screen and (max-width: 765px) {
       padding-right: 20px;

@@ -19,12 +19,12 @@ const CardService = ({ Icon, title, description, url = '/' }: CardServiceProps) 
       <IconWrapper isActive={isHover}><Icon /></IconWrapper>
       <h4>{title}</h4>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+        {description}
       </p>
       <IconMore isActive={isHover}>
         <Image src='/icons/more-icon.svg' alt="Web Logo" width={25} height={25} />
       </IconMore>
-      <Link href={url} />
+      {/* <Link href={url} /> */}
     </Container>
   )
 }

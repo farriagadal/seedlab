@@ -4,28 +4,28 @@ import { Container, List, Tech, Text } from './styles'
 
 const techsCards = [
   {
-    img: '/icons/vue-icon.svg',
-    alt: 'Vue Icon'
+    img: '/images/aws-logo.png',
+    alt: 'AWS Logo'
   },
   {
-    img: '/icons/vue-icon.svg',
-    alt: 'Vue Icon'
+    img: '/images/atlassian-logo.jpg',
+    alt: 'atlassian Logo'
   },
   {
-    img: '/icons/vue-icon.svg',
-    alt: 'Vue Icon'
+    img: '/images/react-logo.png',
+    alt: 'React Logo'
   },
   {
-    img: '/icons/vue-icon.svg',
-    alt: 'Vue Icon'
+    img: '/images/strapi.png',
+    alt: 'Strapi Logo'
   },
   {
-    img: '/icons/vue-icon.svg',
-    alt: 'Vue Icon'
+    img: '/images/google-cloud.png',
+    alt: 'Google Cloud Logo'
   },
   {
-    img: '/icons/vue-icon.svg',
-    alt: 'Vue Icon'
+    img: '/images/docker.png',
+    alt: 'Dcoker Logo'
   },
 ]
 
@@ -49,8 +49,9 @@ const Techs = () => {
       <Container isActive={isShow || isHover}>
         <Text>
           <label>Tecnologías</label>
-          <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h2>Mantente actualizado</h2>
+          <p>Las nuevas tecnologías y herramientas nos permiten construir sitios web y aplicaciones asegurando una calidad y experiencia de usuario de última generación.
+          </p>
         </Text>
         <List>
           {techsCards.map((card, index) => (

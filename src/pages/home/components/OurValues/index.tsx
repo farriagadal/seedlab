@@ -16,11 +16,12 @@ const OurValues = () => {
   return (
     <Section id="ourvalues" isActive={isShow || isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <Container>
-        <BgImg isActive={isShow || isHover}><Image src='/images/heading-bg.jpg' alt="Seedlab Fondo" fill /></BgImg>
+        <BgImg isActive={isShow || isHover}><Image src='/images/equipo-seed.jpg' alt="Seedlab Fondo" fill /></BgImg>
         <Text isActive={isShow || isHover}>
           <label>Nuestro Valor</label>
-          <h2>Lorem ipsum dolor sit amet, consectetur</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h2>Desarrollamos tu idea tal como te la imaginas</h2>
+          <p>Somos apasionados por el desarrollo de software y siempre estamos buscando nuevas tecnologías para poder ofrecer soluciones vanguardistas a nuestros clientes.
+          </p>
         </Text>
       </Container>
     </Section>

@@ -101,10 +101,12 @@ export const Tech = styled.div`
   }
 
   img {
-    max-height: 70px;
-    max-width: 170x;
+    max-height: 105px;
+    max-width: 140px;
     left: 50% !important;
-    top: 50%  !important;
+    top: 50% !important;
+    width: initial !important;
+    height: initial !important;
     transform: translateX(-50%) translateY(-50%) !important;
 
     @media only screen and (max-width: 765px) {

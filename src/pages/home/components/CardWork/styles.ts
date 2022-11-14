@@ -5,7 +5,7 @@ type ContainerProps = {
 }
 
 export const Container = styled.div<ContainerProps>`
-  display: grid;
+  display: block;
 
   p {
     font-family: 'Nunito';
@@ -25,10 +25,19 @@ export const Container = styled.div<ContainerProps>`
 `
 
 export const IconContainer = styled.div`
-  height: 120px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  svg {
+    max-height: 100%;
+  }
+
+  svg, path{
+    /* stroke: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')}; */
+    fill: var(--color-2);
+  }
 `
 
 

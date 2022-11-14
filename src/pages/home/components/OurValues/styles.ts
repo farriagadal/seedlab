@@ -119,7 +119,7 @@ export const Text = styled.div<TextProps>`
     line-height: 100%;
     &::after {
       content: '.';
-      color: var(--color-2);
+      color: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
     }
   }
 

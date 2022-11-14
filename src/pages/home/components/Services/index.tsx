@@ -39,10 +39,6 @@ const Services = ({services, title}: ServicesProps) => {
             </SplideSlide>
           ))}
         </Splide>
-        {/* <CardService />
-        <CardService />
-        <CardService />
-        <CardService /> */}
       </List>
     </Container>
   )

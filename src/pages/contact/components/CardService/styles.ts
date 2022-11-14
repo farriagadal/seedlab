@@ -43,12 +43,22 @@ export const Container = styled.div<ContainerProps>`
 `
 
 export const IconWrapper = styled.div`
-  height: 110px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   svg {
-    transform: scale(0.8);
+    max-height: 100%;
+  }
+
+  svg, path{
+    /* stroke: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')}; */
+    fill: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
+
+    @media only screen and (max-width: 765px) {
+      /* stroke: var(--color-1); */
+      fill: var(--color-1);
+    }
   }
 `

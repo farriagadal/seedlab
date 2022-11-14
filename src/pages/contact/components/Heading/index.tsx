@@ -7,11 +7,11 @@ const Heading = () => {
     <>
       <Container>
         <BgImg>
-          <Image src='/images/contact-bg.jpg' alt="Contact Image" fill />
+          <Image src='/images/call.jpg' alt="Contact Image" fill />
         </BgImg>
         <Text>
-          <h2>Conversemos sobre tu proyecto</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+          <h2>Lleva tu proyecto de principio a fin</h2>
+          <p>Ofrecemos una amplia gama de servicios de desarrollo web, desde el diseño hasta el desarrollo y el alojamiento. Somos un pequeño equipo de desarrolladores de software apasionados por el código, comprometidos a brindar el mejor servicio posible.</p>
         </Text>
       </Container>
       <Bar>

@@ -35,7 +35,7 @@ export const BgImg = styled.div`
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/service-heading.jpg');
+  background-image: url('/images/wireframes.jpg');
   background-size: cover;
   filter: grayscale(1);
   animation: expand-opacity linear 20s;

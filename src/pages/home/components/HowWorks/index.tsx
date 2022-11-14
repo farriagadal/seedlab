@@ -1,26 +1,26 @@
 import { useEffect, useState } from 'react'
 import CardWork from '../CardWork'
 import { Container, List } from './styles'
-import IconWork1 from 'public/icons/how-work-1.svg'
-import IconWork2 from 'public/icons/how-work-2.svg'
-import IconWork3 from 'public/icons/how-work-3.svg'
+import IconWork1 from 'public/icons/objetivos.svg'
+import IconWork2 from 'public/icons/mockup.svg'
+import IconWork3 from 'public/icons/goals.svg'
 
 
 const cards = [
   {
     Icon: IconWork1,
-    title: 'Lorem ipsum dolor',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+    title: 'Definición de objetivos',
+    description: 'Nos reunimos para determinar los caminos y las opciones a elegir en función de sus objetivos comerciales.'
   },
   {
     Icon: IconWork2,
-    title: 'Lorem ipsum dolor sed do eiusmod',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+    title: 'Prototipado y desarrollo',
+    description: 'Creamos rápidamente un prototipo (mockup) del proyecto para ver el progreso y como será al final, asegurándonos de mantenernos alineados con nuestros objetivos.'
   },
   {
     Icon: IconWork3,
-    title: 'Lorem ipsum dolor sed do eiusmod',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.'
+    title: 'Entrega y mantención',
+    description: 'Una vez que hemos entregado el proyecto, es momento de comenzar la etapa de monitoreo y mejoras constantes.'
   }
 ]
 
@@ -43,7 +43,7 @@ const HowWorks = () => {
     <div id="howworks" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <Container isActive={isShow || isHover}>
         <label>Cómo trabajamos</label>
-        <h2>Lorem ipsum dolor sit amet, consectetur</h2>
+        <h2>Tú también serás parte del proyecto</h2>
         <List isActive={isShow || isHover}>
           {cards.map((card, index) => <CardWork key={index} {...card} number={index+1} />)}
         </List>

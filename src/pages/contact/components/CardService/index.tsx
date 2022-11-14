@@ -6,13 +6,11 @@ import Link from 'next/link'
 type CardServiceProps = {
   Icon: any,
   title: string,
-  description?: string,
-  url?: string,
   onChange: (service: string) => void
 }
 
 
-const CardService = ({ Icon, title, description, url = '/', onChange }: CardServiceProps) => {
+const CardService = ({ Icon, title, onChange }: CardServiceProps) => {
   const [isSelected, setIsSelected] = useState(false)
   
   const handleClick = () => {
@@ -23,7 +21,7 @@ const CardService = ({ Icon, title, description, url = '/', onChange }: CardServ
   return (
     <Container isActive={isSelected} onClick={() => handleClick()}>
       <IconWrapper><Icon /></IconWrapper>
-      <h4>Servicio lorem ipsum dolor</h4>
+      <h4>{title}</h4>
     </Container>
   )
 }
