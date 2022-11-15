@@ -35,7 +35,6 @@ export const IconContainer = styled.div`
   }
 
   svg, path{
-    /* stroke: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')}; */
     fill: var(--color-2);
   }
 `

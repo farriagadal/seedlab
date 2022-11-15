@@ -53,12 +53,6 @@ export const IconWrapper = styled.div`
   }
 
   svg, path{
-    /* stroke: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')}; */
-    fill: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')};
-
-    @media only screen and (max-width: 765px) {
-      /* stroke: var(--color-1); */
-      fill: var(--color-1);
-    }
+    fill: var(--color-1);
   }
 `

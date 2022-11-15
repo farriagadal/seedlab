@@ -7,11 +7,10 @@ const Success = () => {
     <>
       <Container>
         <BgImg>
-          <Image src='/images/contact-bg.jpg' alt="Contact Image" fill />
+          <Image src='/images/404.jpg' alt="Contact Image" fill />
         </BgImg>
         <Text>
           <Title>
-            <Image src='/icons/error-icon.svg' alt="Error Icon" width={74} height={74} />
             <h2>Ha ocurrido un error</h2>
           </Title>
           <p>Por favor intente más, estamos solucionando el problema en estos momentos.</p>

@@ -100,7 +100,6 @@ export const Title = styled.div`
 
   h2 {
     margin-top: 0;
-    margin-left: 33px;
     margin-bottom: 0;
     font-family: 'Poppins';
     font-weight: 800;

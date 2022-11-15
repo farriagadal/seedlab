@@ -46,7 +46,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Heading />
-      <Services title="¿Que ofrecemos?" services={cardServices}/>
+      <Services title="¿Qué ofrecemos?" services={cardServices}/>
       <OurValues />
       <HowWorks />
       <Techs />
