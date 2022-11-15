@@ -53,6 +53,6 @@ export const IconWrapper = styled.div`
   }
 
   svg, path{
-    fill: var(--color-1);
+    fill: var(--color-2);
   }
 `
