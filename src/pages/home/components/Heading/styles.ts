@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  color: white;
-  //
+  color: var(--color-3);  //
   position: relative;
   margin-top: 175px;
   background: linear-gradient(100.79deg, var(--color-2) 6.96%, var(--color-1) 98.01%);

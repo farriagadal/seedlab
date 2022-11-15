@@ -35,6 +35,10 @@ export const Container = styled.div`
       width: 100%;
     }
   }
+
+  h2 {
+    color: var(--color-3);    font-size: 25px;
+  }
 `
 
 export const Icons = styled.div`

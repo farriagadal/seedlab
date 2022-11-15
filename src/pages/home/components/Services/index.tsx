@@ -14,7 +14,7 @@ const Services = ({services, title}: ServicesProps) => {
       <h2>{title}</h2>
       <List>
         <Splide options={{
-          perPage: 4,
+          perPage: 3,
           rewind: false,
           arrows: false,
           width : '100%',

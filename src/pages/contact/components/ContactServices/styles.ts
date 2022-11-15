@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   margin: auto;
-  color: white;
+  color: var(--color-3);
   padding-top: 50px;
   overflow: hidden;
 

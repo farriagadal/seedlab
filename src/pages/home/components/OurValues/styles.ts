@@ -25,7 +25,7 @@ export const Section = styled.div<SectionProps>`
 export const Container = styled.div`
   max-width: var(--container-width);
   margin: auto;
-  color: white;
+  color: var(--color-3);
   display: flex;
 
   @media only screen and (max-width: 765px) {

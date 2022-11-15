@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div>
       <Head>
-        <title>SEEDLAB.CL - Contácto</title>
+        <title>F.Arriagada - Portafolio Web</title>
       </Head>
       <Heading />
       <FormContact />

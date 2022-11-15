@@ -9,14 +9,28 @@
   --container-width: 1238px;
   --content-width: 816px;
 
-  --color-1: #021720; 
-  --color-2: #23D4AA;
+  --color-1: #202327;
+  --color-2: #FF014D;
   --color-3: #fff;
-  --color-4: #072C3C;
+  --color-4: #2a2c2e; 
   --color-5: #70828A;
   --color-6: #031821;
   --color-7: #FF004C;
-  --color-8: #395B69; /* solo para input label */
+  --color-8: #395B69;
+}
+
+:root2 {
+  --container-width: 1238px;
+  --content-width: 816px;
+
+  --color-1: #021720; /* 29 veces */
+  --color-2: #23D4AA; /* 46 veces */
+  --color-3: #fff; /* 22 veces */
+  --color-4: #072C3C; /* 10 veces */
+  --color-5: #70828A; /* 3 veces */
+  --color-6: #031821; /* 1 vez */
+  --color-7: #FF004C; /* 1 vez */
+  --color-8: #395B69; /* 1 vez */
 }
 
 html,

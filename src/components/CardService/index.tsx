@@ -2,6 +2,7 @@ import { Container, IconMore, IconWrapper } from './styles'
 import Image from 'next/image'
 import { useState } from 'react'
 import Link from 'next/link'
+import IconPlus from 'public//icons/arrow-down.svg'
 
 type CardServiceProps = {
   Icon: any,
@@ -16,13 +17,16 @@ const CardService = ({ Icon, title, description, url = '/' }: CardServiceProps) 
   
   return (
     <Container isActive={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
-      <IconWrapper isActive={isHover}><Icon /></IconWrapper>
+      <IconWrapper isActive={isHover}>
+        {/* <Icon /> */}
+        <img src="images/rocket.png" alt="" />
+      </IconWrapper>
       <h4>{title}</h4>
       <p>
         {description}
       </p>
       <IconMore isActive={isHover}>
-        <Image src='/icons/more-icon.svg' alt="Web Logo" width={25} height={25} />
+        <IconPlus />
       </IconMore>
       {/* <Link href={url} /> */}
     </Container>

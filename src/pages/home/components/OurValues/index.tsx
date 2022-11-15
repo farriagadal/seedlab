@@ -18,9 +18,9 @@ const OurValues = () => {
       <Container>
         <BgImg isActive={isShow || isHover}><Image src='/images/equipo-seed.jpg' alt="Seedlab Fondo" fill /></BgImg>
         <Text isActive={isShow || isHover}>
-          <label>Nuestro Valor</label>
-          <h2>Desarrollamos tu idea tal como te la imaginas</h2>
-          <p>Somos apasionados por el desarrollo de software y siempre estamos buscando nuevas tecnologías para poder ofrecer soluciones vanguardistas a nuestros clientes.
+          <label>¿Quién soy?</label>
+          <h2>Apasionado por buscar soluciones tecnológicas</h2>
+          <p>En constante aprendizaje de nuevas tecnologías conocimientos. Poseo sólidos conocimientos en tecnologías para desarrollo de aplicaciones con Python (Django), JavaScript (Node.js, React, Vue, Angular) y Docker. Además de conocimiento avanzado en herramientas para desarrollo colaborativo como Git (Github y Gitlab), Jira, Slack
           </p>
         </Text>
       </Container>

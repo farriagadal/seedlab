@@ -23,13 +23,16 @@ export const Container = styled.div<ContainerProps>`
     .full-logo {
       animation: 0.3s appear-logo linear;
       display: ${props => props.isTop ? 'block' : 'none'};
+      font-size: 35px;
     }
   
     .short-logo {
       position: absolute;
       animation: 0.2s appear-logo linear;
       left: 47px;
-      top: 22px;
+      top: 15px;
+      line-height: 100%;
+      margin: auto;
       display: ${props => props.isTop ? 'none' : 'block'};
     }
 
@@ -51,25 +54,24 @@ export const Container = styled.div<ContainerProps>`
   }
 
   &:hover {
-    background: ${props => props.isTop ? 'var(--color-6)' : 'var(--color-2)'};
+    background: ${props => props.isTop ? 'var(--color-1)' : 'var(--color-2)'};
 
-    .short-logo {
-      display: none;
-    }
-
-    .short-logo-black {
-      display: ${props => props.isTop ? 'none' : 'block'};;
-    }
+    /* .short-logo {
+      color: var(--color-1);
+    } */
   }
 `
 export const Logo = styled.div`
   margin-right: auto;
+
+  h2 {
+    color: var(--color-3);    font-size: 25px;
+  }
 `
 
 export const MenuOption = styled.div`
   font-family: 'Poppins';
-  color: white;
-  font-weight: 400;
+  color: var(--color-3);  font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.1em;
   margin-left: 76px;

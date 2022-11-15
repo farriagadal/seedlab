@@ -7,8 +7,7 @@ type ContainerProps = {
 export const Container = styled.div<ContainerProps>`
   max-width: var(--container-width);
   margin: auto;
-  color: white;
-  padding: 30px 0 120px 0;
+  color: var(--color-3);  padding: 30px 0 120px 0;
   opacity: ${(props) => (props.isActive ? '1' : '0')};
   transform: ${(props) => (props.isActive ? 'translateY(0px)' : 'translateY(250px)')};
   transition: all 0.4s linear;

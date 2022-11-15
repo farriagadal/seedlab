@@ -3,8 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: var(--content-width);
   margin: auto;
-  color: white;
-  padding-top: 54px;
+  color: var(--color-3);
   padding-bottom: 72px;
 
 
@@ -14,7 +13,7 @@ export const Container = styled.div`
   }
 
   b p {
-    color: white;
+    color: var(--color-3);
     font-weight: 700;
   }
 
@@ -91,13 +90,58 @@ export const BtnContact = styled.div`
   }
 `
 
-export const Divider = styled.div`
-  width: var(--container-width);
-  margin: auto;
-  border-bottom: 1px solid var(--color-4);
+export const Title = styled.div`
+  color: var(--color-3);
+  margin-top: 100px;
 
-  
-  @media only screen and (max-width: 765px) {
-    width: calc(100% - 40px);
+  label {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-2);
+    text-align: center;
+    display: block;
+
+    @media only screen and (max-width: 765px) {
+      text-align: left;
+    }
+
+    &:after {
+      content: '';
+      left: calc(50% + 120px);
+      width: calc(49vw - 120px);
+      border-bottom: solid 1px;
+      margin-top: 10px;
+      position: absolute;
+      opacity: 0.3;
+
+      @media only screen and (max-width: 765px) {
+        text-align: left;
+        left: initial;
+        width: calc(100vw - 250px);
+        margin-left: 20px;
+      }
+    }
+  }
+
+
+  h2  {
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    max-width: 600px;
+    margin: 34px auto 70px auto;
+
+    @media only screen and (max-width: 765px) {
+      text-align: left;
+    }
+
+    &::after {
+      content: '.';
+      color: var(--color-2);
+    }
   }
 `

@@ -44,7 +44,7 @@ const NavMobile = () => {
             }
   
             <Link href="/contacto"><ContactBtn>
-              <span>Contáctanos</span>
+              <span>Contáctame</span>
               <Image src='/icons/contact-icon.svg' alt="Contact Icon" width={16} height={16} />
             </ContactBtn></Link>
             <CloseBtn onClick={() => setOpen(false)}>

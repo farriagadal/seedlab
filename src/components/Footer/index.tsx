@@ -6,10 +6,10 @@ const Footer = () => {
 
   return (
     <Container>
-      <Link href="/" className="full-logo">
-        <Image src='/icons/logo.svg' alt="SeedLab Logo" width={245} height={46} />
+      <Link href="/">
+        <h2>F. Arriagada</h2>
       </Link>
-      <p>SeedLab 2022 - Todos los derechos reservados</p>
+      <p>Fernando Arriagada Portafolio Web - Chile</p>
       <Icons>
         <Link href="/">
           <Image src='/icons/facebook-icon.svg' alt="facebook" width={18} height={18} />

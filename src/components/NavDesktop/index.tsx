@@ -23,29 +23,23 @@ const NavDesktop = () => {
       <Container isTop={isTop}>
         <nav>
           <Logo>
-            <Link href="/" className="full-logo">
-              <Image src='/icons/logo.svg' alt="SeedLab Logo" width={245} height={46} />
-            </Link>
-            <Link href="/" className="short-logo">
-              <Image src='/icons/short-logo.svg' alt="SeedLab Logo" width={133} height={19} />
-            </Link>
-            <Link href="/" className="short-logo-black">
-              <Image src='/icons/short-logo-black.svg' alt="SeedLab Logo" width={133} height={19} />
-            </Link>
+            <h2 className='full-logo'>F. Arriagada</h2>
+            <h2 className='short-logo'>F. Arriagada</h2>
+            
           </Logo>
           {
             router.pathname === '/' ? 
               <>
-                <MenuOption><a href="/#services">Servicios</a></MenuOption>
-                <MenuOption><a href="/#ourvalues">Nuestro Valor</a></MenuOption>
-                <MenuOption><a href="/#howworks">Como trabajamos</a></MenuOption>
+                <MenuOption><a href="/#services">Experiencia</a></MenuOption>
+                <MenuOption><a href="/#ourvalues">¿Quien soy?</a></MenuOption>
+                <MenuOption><a href="/#howworks">Skills</a></MenuOption>
                 <MenuOption><a href="/#techs">Tecnologías</a></MenuOption>
               </>
               :
               <>
-                <MenuOption><Link href="/#services">Servicios</Link></MenuOption>
-                <MenuOption><Link href="/#ourvalues">Nuestro Valor</Link></MenuOption>
-                <MenuOption><Link href="/#howworks">Como trabajamos</Link></MenuOption>
+                <MenuOption><Link href="/#services">Experiencia</Link></MenuOption>
+                <MenuOption><Link href="/#ourvalues">¿Quien soy?</Link></MenuOption>
+                <MenuOption><Link href="/#howworks">Skills</Link></MenuOption>
                 <MenuOption><Link href="/#techs">Tecnologías</Link></MenuOption>
               </>
           }
@@ -54,7 +48,7 @@ const NavDesktop = () => {
       <Link href="/contacto">
         <ContactBtn>
           <Image src='/icons/contact-icon.svg' alt="Contact Icon" width={16} height={16} />
-          <span>Contáctanos</span>
+          <span>Contáctame</span>
         </ContactBtn>
       </Link>
 

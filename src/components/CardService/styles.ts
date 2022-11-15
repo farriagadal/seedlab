@@ -86,7 +86,7 @@ export const IconWrapper = styled.div<IconMoreProps>`
   align-items: center;
   justify-content: center;
 
-  svg {
+  img, svg {
     max-height: 100%;
   }
 
@@ -111,13 +111,18 @@ export const IconMore = styled.div<IconMoreProps>`
   left: 50%;
   transform: translateX(-50%);
 
-  img {
-    opacity: ${(props) => (props.isActive ? '1' : '0.1')};
-    filter: ${(props) => (props.isActive ? 'brightness(0) invert(1)' : 'none')};
+  svg {
+    max-height: 100%;
+    transform: scale(1.5);
+  }
+
+  svg, path{
+    /* stroke: ${(props) => (props.isActive ? 'var(--color-1)' : 'var(--color-2)')}; */
+    fill: ${(props) => (props.isActive ? 'var(--color-3)' : 'var(--color-2)')};
 
     @media only screen and (max-width: 765px) {
-      opacity: 1;
-      filter: brightness(0) invert(1);
+      /* stroke: var(--color-1); */
+      fill: var(--color-1);
     }
   }
 `
