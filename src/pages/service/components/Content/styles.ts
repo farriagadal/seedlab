@@ -23,9 +23,9 @@ export const Container = styled.div`
   }
 
   ul {
-    background: var(--color-2);
-    border-radius: 30px 0px;
-    padding: 60px;
+    /* background: var(--color-2);
+    border-radius: 30px 0px; */
+    /* padding: 60px; */
     margin: 70px -60px;
     list-style-type: none;
     position: relative;
@@ -37,6 +37,9 @@ export const Container = styled.div`
 
 
     li {
+      padding: 60px;
+      background: var(--color-2);
+      border-radius: 30px 0px;
       font-family: 'Nunito';
       font-weight: 700;
       font-size: 18px;
@@ -44,7 +47,7 @@ export const Container = styled.div`
       letter-spacing: 0.04em;
       color: var(--color-3);
       margin-bottom: 34px;
-      padding-left: 60px;
+      padding-left: 80px;
 
       @media only screen and (max-width: 765px) {
         padding-left: 50px;
@@ -53,7 +56,7 @@ export const Container = styled.div`
       &:before {
         content:  url('/icons/check-icon.svg');
         position: absolute;
-        left: 60px;
+        left: 80px;
         margin-top: 6px;
 
         @media only screen and (max-width: 765px) {
@@ -63,6 +66,13 @@ export const Container = styled.div`
 
       &:last-child {
         margin-bottom: 0;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 100%;
+        color: white;
+        opacity: 0.9;
       }
 
     }

@@ -16,7 +16,7 @@ const OurValues = () => {
   return (
     <Section id="ourvalues" isActive={isShow || isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <Container>
-        <BgImg isActive={isShow || isHover}><Image src='/images/equipo-seed.jpg' alt="Seedlab Fondo" fill /></BgImg>
+        <BgImg isActive={isShow || isHover}><Image src='/images/profile.jpg' alt="Seedlab Fondo" fill /></BgImg>
         <Text isActive={isShow || isHover}>
           <label>¿Quién soy?</label>
           <h2>Apasionado por buscar soluciones tecnológicas</h2>

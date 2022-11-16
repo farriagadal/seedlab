@@ -5,6 +5,20 @@
   font-family: 'Nunito', sans-serif;
 }
 
+:root3 {
+  --container-width: 1238px;
+  --content-width: 816px;
+
+  --color-1: #202327;
+  --color-2: #FF014D;
+  --color-3: #fff;
+  --color-4: #2a2c2e; 
+  --color-5: #70828A;
+  --color-6: #031821;
+  --color-7: #FF004C;
+  --color-8: #395B69;
+}
+
 :root {
   --container-width: 1238px;
   --content-width: 816px;
@@ -19,7 +33,7 @@
   --color-8: #395B69;
 }
 
-:root2 {
+:root1 {
   --container-width: 1238px;
   --content-width: 816px;
 

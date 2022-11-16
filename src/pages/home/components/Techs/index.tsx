@@ -27,6 +27,18 @@ const techsCards = [
     img: '/images/docker.png',
     alt: 'Dcoker Logo'
   },
+  {
+    img: '/images/strapi.png',
+    alt: 'Strapi Logo'
+  },
+  {
+    img: '/images/google-cloud.png',
+    alt: 'Google Cloud Logo'
+  },
+  {
+    img: '/images/docker.png',
+    alt: 'Dcoker Logo'
+  },
 ]
 
 
@@ -48,7 +60,7 @@ const Techs = () => {
     <div id="techs" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <Container isActive={isShow || isHover}>
         <Text>
-          <label>Tecnologías</label>
+          <label>Stacks</label>
           <h2>Mantente actualizado</h2>
           <p>Las nuevas tecnologías y herramientas nos permiten construir sitios web y aplicaciones asegurando una calidad y experiencia de usuario de última generación.
           </p>

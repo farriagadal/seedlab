@@ -47,12 +47,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Heading />
+      <Techs />
       {/* <HowWorks /> */}
-      <Services title="Experiencia" services={cardServices}/>
+      {/* <Services title="Experiencia" services={cardServices}/> */}
       <OurValues />
       <Content />
       {/* <HowWorks /> */}
-      <Techs />
     </div>
   )
 }

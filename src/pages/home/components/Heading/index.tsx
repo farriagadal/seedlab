@@ -10,7 +10,7 @@ const Heading = () => {
   return (
     <>
       <Container>
-        <label>Fernando Arriagada - Portafolio Web</label>
+        <label>Portafolio Web</label>
         <Splide aria-label="My Favorite Images"
           options={{
             type: 'fade',

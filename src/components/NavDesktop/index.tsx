@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link'
-import { Container, Logo, MenuOption, ContactBtn } from './styles'
+import { Container, Logo, MenuOption, ContactBtn, ThemeButton } from './styles'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
@@ -30,17 +30,15 @@ const NavDesktop = () => {
           {
             router.pathname === '/' ? 
               <>
-                <MenuOption><a href="/#services">Experiencia</a></MenuOption>
+                <MenuOption><a href="/#services">Stacks</a></MenuOption>
                 <MenuOption><a href="/#ourvalues">¿Quien soy?</a></MenuOption>
-                <MenuOption><a href="/#howworks">Skills</a></MenuOption>
-                <MenuOption><a href="/#techs">Tecnologías</a></MenuOption>
+                <MenuOption><a href="/#howworks">Experiencia</a></MenuOption>
               </>
               :
               <>
-                <MenuOption><Link href="/#services">Experiencia</Link></MenuOption>
+                <MenuOption><Link href="/#services">Stacks</Link></MenuOption>
                 <MenuOption><Link href="/#ourvalues">¿Quien soy?</Link></MenuOption>
-                <MenuOption><Link href="/#howworks">Skills</Link></MenuOption>
-                <MenuOption><Link href="/#techs">Tecnologías</Link></MenuOption>
+                <MenuOption><Link href="/#howworks">Experiencia</Link></MenuOption>
               </>
           }
         </nav>

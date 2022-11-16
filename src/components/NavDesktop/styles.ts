@@ -27,10 +27,10 @@ export const Container = styled.div<ContainerProps>`
     }
   
     .short-logo {
-      position: absolute;
+      /* position: absolute; */
       animation: 0.2s appear-logo linear;
-      left: 47px;
-      top: 15px;
+      /* left: 47px;
+      top: 15px; */
       line-height: 100%;
       margin: auto;
       display: ${props => props.isTop ? 'none' : 'block'};
@@ -116,4 +116,7 @@ export const ContactBtn = styled.div`
     transform: rotate(90deg);
     transition: all 0.2s;
   }
+`
+
+export const ThemeButton = styled.div`
 `

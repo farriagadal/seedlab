@@ -7,7 +7,8 @@ type ContainerProps = {
 export const Container = styled.div<ContainerProps>`
   max-width: var(--container-width);
   margin: auto;
-  color: var(--color-3);  padding: 30px 0 120px 0;
+  color: var(--color-3);
+  padding: 120px 0 120px 0;
   opacity: ${(props) => (props.isActive ? '1' : '0')};
   transform: ${(props) => (props.isActive ? 'translateY(0px)' : 'translateY(250px)')};
   transition: all 0.4s linear;
@@ -75,9 +76,9 @@ export const Text = styled.div`
 export const List = styled.div`
   margin-left: auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 65px;
-  row-gap: 43px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 30px;
+  row-gap: 30px;
   transition: all 0.4s linear;
   max-width: 570px;
 
@@ -89,8 +90,8 @@ export const List = styled.div`
 
 export const Tech = styled.div`
   position: relative;
-  width: 252px;
-  height: 164px;
+  width: 170px;
+  height: 125px;
   background: var(--color-3);
   border-radius: 30px 0px;
 
@@ -100,8 +101,8 @@ export const Tech = styled.div`
   }
 
   img {
-    max-height: 105px;
-    max-width: 140px;
+    max-height: 83px;
+    max-width: 110px;
     left: 50% !important;
     top: 50% !important;
     width: initial !important;
