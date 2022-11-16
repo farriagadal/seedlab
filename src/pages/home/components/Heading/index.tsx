@@ -32,17 +32,17 @@ const Heading = () => {
           </SplideSlide> */}
           <SplideSlide>
             <h1>Front-End Developer</h1>
-            <p>Contamos con amplia experiencia en el desarrollo de software con el propósito de optimizar y automatizar procesos dentro de tu negocio, para que solo te preocupes de lo esencial.</p>
+            <p>Software Engineer con +5 años de experiencia en el campo; +4 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.</p>
             <BgImg show={imageId === 0}><Image src='/images/wireframes.jpg' alt="Seedlab Fondo" fill /></BgImg>
           </SplideSlide>
           <SplideSlide>
             <h1>Full-Stack Developer</h1>
-            <p>Estamos aquí para ayudarle a diseñar, construir, implementar y escalar su idea. Contamos con profesionales que se encargaran de brindar el mejor diseño y experiencia de usuario en cada desarrollo.</p>
+            <p>Software Engineer con +5 años de experiencia en el campo; +4 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.</p>
             <BgImg show={imageId === 1}><Image src='/images/graficos.jpg' alt="Seedlab Fondo" fill /></BgImg>
           </SplideSlide>
         </Splide>
       </Container>
-      <ArrowDown href="/#services">
+      <ArrowDown href="/#techs">
         <Image src='/icons/arrow-down.svg' alt="Arrow Down" fill />
       </ArrowDown>
     </>

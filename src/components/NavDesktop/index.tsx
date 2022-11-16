@@ -30,15 +30,15 @@ const NavDesktop = () => {
           {
             router.pathname === '/' ? 
               <>
-                <MenuOption><a href="/#services">Stacks</a></MenuOption>
+                <MenuOption><a href="/#techs">Stacks</a></MenuOption>
                 <MenuOption><a href="/#ourvalues">¿Quien soy?</a></MenuOption>
-                <MenuOption><a href="/#howworks">Experiencia</a></MenuOption>
+                <MenuOption><a href="/#content">Experiencia</a></MenuOption>
               </>
               :
               <>
-                <MenuOption><Link href="/#services">Stacks</Link></MenuOption>
+                <MenuOption><Link href="/#techs">Stacks</Link></MenuOption>
                 <MenuOption><Link href="/#ourvalues">¿Quien soy?</Link></MenuOption>
-                <MenuOption><Link href="/#howworks">Experiencia</Link></MenuOption>
+                <MenuOption><Link href="/#content">Experiencia</Link></MenuOption>
               </>
           }
         </nav>

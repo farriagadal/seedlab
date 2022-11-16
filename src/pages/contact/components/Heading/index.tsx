@@ -10,8 +10,8 @@ const Heading = () => {
           <Image src='/images/call.jpg' alt="Contact Image" fill />
         </BgImg>
         <Text>
-          <h2>Lleva tu proyecto de principio a fin</h2>
-          <p>Ofrecemos una amplia gama de servicios de desarrollo web, desde el diseño hasta el desarrollo y el alojamiento. Somos un pequeño equipo de desarrolladores de software apasionados por el código, comprometidos a brindar el mejor servicio posible.</p>
+          <h2>Conversemos</h2>
+          <p>Ofrecezco servicios de desarrollo web, desde el diseño hasta el desarrollo y el alojamiento. Soy apasionado por el código, comprometido a brindar el mejor servicio posible.</p>
         </Text>
       </Container>
       <Bar>

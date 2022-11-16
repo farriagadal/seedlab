@@ -4,20 +4,32 @@ import { Container, List, Tech, Text } from './styles'
 
 const techsCards = [
   {
-    img: '/images/aws-logo.png',
-    alt: 'AWS Logo'
+    img: '/images/react-logo.png',
+    alt: 'React Logo'
+  },
+  {
+    img: '/images/next-logo.png',
+    alt: 'Strapi Logo'
+  },
+  {
+    img: '/images/angular.png',
+    alt: 'Strapi Logo'
+  },
+  {
+    img: '/images/python.png',
+    alt: 'Google Cloud Logo'
+  },
+  {
+    img: '/images/node-logo.png',
+    alt: 'Docker Logo'
   },
   {
     img: '/images/atlassian-logo.jpg',
     alt: 'atlassian Logo'
   },
   {
-    img: '/images/react-logo.png',
-    alt: 'React Logo'
-  },
-  {
-    img: '/images/strapi.png',
-    alt: 'Strapi Logo'
+    img: '/images/aws-logo.png',
+    alt: 'AWS Logo'
   },
   {
     img: '/images/google-cloud.png',
@@ -25,19 +37,7 @@ const techsCards = [
   },
   {
     img: '/images/docker.png',
-    alt: 'Dcoker Logo'
-  },
-  {
-    img: '/images/strapi.png',
-    alt: 'Strapi Logo'
-  },
-  {
-    img: '/images/google-cloud.png',
-    alt: 'Google Cloud Logo'
-  },
-  {
-    img: '/images/docker.png',
-    alt: 'Dcoker Logo'
+    alt: 'Docker Logo'
   },
 ]
 
@@ -61,8 +61,8 @@ const Techs = () => {
       <Container isActive={isShow || isHover}>
         <Text>
           <label>Stacks</label>
-          <h2>Mantente actualizado</h2>
-          <p>Las nuevas tecnologías y herramientas nos permiten construir sitios web y aplicaciones asegurando una calidad y experiencia de usuario de última generación.
+          <h2>Eterno aprendiz de nuevas técnologías</h2>
+          <p>Me apasiona aprender sobre herramientas y metodologías que me permitan construir aplicaciones con mejor calidad y experiencia de usuario.
           </p>
         </Text>
         <List>

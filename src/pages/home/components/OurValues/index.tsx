@@ -20,7 +20,8 @@ const OurValues = () => {
         <Text isActive={isShow || isHover}>
           <label>¿Quién soy?</label>
           <h2>Apasionado por buscar soluciones tecnológicas</h2>
-          <p>En constante aprendizaje de nuevas tecnologías conocimientos. Poseo sólidos conocimientos en tecnologías para desarrollo de aplicaciones con Python (Django), JavaScript (Node.js, React, Vue, Angular) y Docker. Además de conocimiento avanzado en herramientas para desarrollo colaborativo como Git (Github y Gitlab), Jira, Slack
+          <p>Software Engineer con +5 años de experiencia en el campo; +4 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.
+            <br />Motivado por la creación de soluciones IT, aspiro siempre al desarrollo personal tanto humano como profesional, mejorando día a día mis cualidades, metodologías y buenas prácticas.
           </p>
         </Text>
       </Container>
