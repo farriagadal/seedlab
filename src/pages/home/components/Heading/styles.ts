@@ -39,6 +39,8 @@ export const Container = styled.div`
     max-width: 565px;
     font-size: 80px;
     line-height: 100%;
+    overflow-wrap: anywhere;
+    font-size: 57px;
 
     @media only screen and (max-width: 765px) {
       padding-right: 20px;
