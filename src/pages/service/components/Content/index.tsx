@@ -7,7 +7,7 @@ const Content = ({ Body }: any) => {
     <div id="content">
       <Title>
         <label>Experiencia</label>
-        <h2>Experiencia</h2>
+        <h2>Experiencia laboral</h2>
       </Title>
       <Container>
         <ul>
