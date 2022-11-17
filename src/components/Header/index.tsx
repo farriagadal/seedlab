@@ -4,15 +4,17 @@ import NavDesktop from '../NavDesktop'
 import NavMobile from '../NavMobile'
 
 const Header = () => {
-  const [isMobile, setIsMobile] = useState(true)
+  const [isMobile, setIsMobile] = useState(false)
+  const [isReady, setIsReady] = useState(false)
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768)
+    setIsMobile(window.innerWidth < 1300)
+    setIsReady(true)
   }, [])
   
   return (
     <>
-      { isMobile ? <NavMobile /> : <NavDesktop /> }
+      { isMobile && isReady ? <NavMobile /> : <NavDesktop /> }
     </>
   )
 }

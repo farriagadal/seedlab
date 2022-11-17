@@ -10,13 +10,30 @@ export const Container = styled.div`
   transition: background 0.2s ease-in-out; */
 `
 export const Isotipo = styled.div`
-  margin-left: 20px
+
+
+  h2 {
+    margin-left: 20px;
+    margin-top: 45px;
+    color: white;
+    font-size: 40px;
+    background: var(--color-2);
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 17px 0;
+  }
 `
 
 export const Logo = styled.div`
   position: absolute;
-  top: 34px;
-  left: 100px;
+  top: 50px;
+  left: 85px;
+
+  h2 {
+    margin-top: 0;
+    color: white;
+    font-size: 37px;
+  }
 `
 
 export const MenuButton = styled.button`

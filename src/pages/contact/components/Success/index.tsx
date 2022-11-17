@@ -7,7 +7,7 @@ const Success = () => {
     <>
       <Container>
         <BgImg>
-          <Image src='/images/contact-bg.jpg' alt="Contact Image" fill />
+          <Image src='/images/robot.jpg' alt="Contact Image" fill />
         </BgImg>
         <Text>
           <Title>

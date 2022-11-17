@@ -37,7 +37,7 @@ export const BgImg = styled.div`
     top: 0;
     animation: opacityless linear 5s;
     opacity: 0.5;
-    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%,var(--color-1) 100%);
+    background: linear-gradient(44deg,rgb(1 24 34 / 26%) 0%, var(--color-1) 100%);
     z-index: 1;
   }
 

@@ -23,8 +23,8 @@ const NavDesktop = () => {
       <Container isTop={isTop}>
         <nav>
           <Logo>
-            <h2 className='full-logo'>F. Arriagada</h2>
-            <h2 className='short-logo'>F. Arriagada</h2>
+            <h2 className='full-logo'><span>F.</span>Arriagada</h2>
+            <h2 className='short-logo'><span>F.</span> Arriagada</h2>
             
           </Logo>
           {

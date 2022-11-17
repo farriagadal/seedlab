@@ -32,14 +32,11 @@ const cardServices = [
 const FormContact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm({ mode: 'all', reValidateMode: 'onChange', })
   const [isIntialited, setIsIntialited] = useState(false)
-  const [servicesSelected, setServicesSelected] = useState<any[]>([])
   const router = useRouter()
 
   const onSubmit = (data: any) =>{
-    console.log(data)
     const templateParams = {
-      ...data,
-      services: servicesSelected.join(', ')
+      ...data
     }
     emailjs.send('gmail', 'template_r70dzna', templateParams, 'user_Z9ZA15CBTB3P6Kw6xRIeQ')
       .then(() => {
@@ -85,8 +82,12 @@ const FormContact = () => {
             })}}
             error={errors.email?.message}
           />
+          <InputText
+            label="Asunto*"
+            register={{...register('services', { required: ' ' })}}
+            error={errors.services?.message}
+          />
         </Fields>
-        <ContactServices services={cardServices} servicesSelected={servicesSelected} onChange={setServicesSelected} />
         <BtnContact isDisabled={Object.keys(errors).length !== 0 && isIntialited} type='submit'>COTIZAR SERVICIO</BtnContact>
       </form>
     </Container>

@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 
   p {
-    color: #7E888D;
+    color: white;
     font-weight: 400;
   }
 
@@ -32,11 +32,11 @@ export const Container = styled.div`
 
     @media only screen and (max-width: 765px) {
       margin: 40px 0;
-      padding: 30px;
+      padding: 0px;
     }
 
 
-    li {
+    /* li {
       padding: 60px;
       background: var(--color-2);
       border-radius: 30px 0px;
@@ -75,7 +75,7 @@ export const Container = styled.div`
         opacity: 0.9;
       }
 
-    }
+    } */
   }
 `
 export const BtnContact = styled.div`
@@ -117,6 +117,7 @@ export const Title = styled.div`
 
     @media only screen and (max-width: 765px) {
       text-align: left;
+      margin-left: 20px;
     }
 
     &:after {
@@ -131,7 +132,7 @@ export const Title = styled.div`
       @media only screen and (max-width: 765px) {
         text-align: left;
         left: initial;
-        width: calc(100vw - 250px);
+        width: calc(100vw - 170px);
         margin-left: 20px;
       }
     }
@@ -147,6 +148,7 @@ export const Title = styled.div`
 
     @media only screen and (max-width: 765px) {
       text-align: left;
+      margin-left: 20px;
     }
 
     &::after {

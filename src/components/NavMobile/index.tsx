@@ -14,11 +14,11 @@ const NavMobile = () => {
       <div id="indicator" />
       <Container>
         <Isotipo><Link href="/">
-          <Image src='/icons/logo-isotipo.svg' alt="SeedLab Isotipo" width={45} height={45} />
+          <h2>F.</h2>
         </Link></Isotipo>
       </Container>
       <Logo><Link href="/">
-        <Image src='/icons/short-logo.svg' alt="SeedLab Logo" width={166} height={24} />
+        <h2>Arriagada</h2>
       </Link></Logo>
       <MenuButton onClick={() => setOpen(true)}>
         <Image src='/icons/menu-icon.svg' alt="SeedLab Logo" width={29} height={19} />

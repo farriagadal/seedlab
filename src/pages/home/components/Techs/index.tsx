@@ -61,9 +61,8 @@ const Techs = () => {
       <Container isActive={isShow || isHover}>
         <Text>
           <label>Stacks</label>
-          <h2>Eterno aprendiz de nuevas técnologías</h2>
-          <p>Me apasiona aprender sobre herramientas y metodologías que me permitan construir aplicaciones con mejor calidad y experiencia de usuario.
-          </p>
+          <h2>Eterno aprendiz</h2>
+          <p>Me apasiona aprender sobre herramientas y metodologías que me permitan construir aplicaciones cada vez mejor, otorgando mayor profesionalismo al desarrollar software y ofrecerle al usuario una mejor experiencia.</p>
         </Text>
         <List>
           {techsCards.map((card, index) => (

@@ -7,7 +7,7 @@ const Heading = () => {
     <>
       <Container>
         <BgImg>
-          <Image src='/images/call.jpg' alt="Contact Image" fill />
+          <Image src='/images/robot.jpg' alt="Contact Image" fill />
         </BgImg>
         <Text>
           <h2>Conversemos</h2>

@@ -34,6 +34,13 @@ export const Container = styled.div<ContainerProps>`
       line-height: 100%;
       margin: auto;
       display: ${props => props.isTop ? 'none' : 'block'};
+
+      span {
+        font-size: 28px;
+        padding: 2px 10px;
+        border-radius: 13px 0;
+        margin-right: 7px;
+      }
     }
 
     .short-logo-black {
@@ -65,7 +72,20 @@ export const Logo = styled.div`
   margin-right: auto;
 
   h2 {
-    color: var(--color-3);    font-size: 25px;
+    color: var(--color-3);
+    font-size: 25px;
+
+    span {
+      font-size: 40px;
+      background: var(--color-2);
+      padding: 2px 13px;
+      border-radius: 17px 0;
+      font-family: 'Poppins';
+      font-weight: 800;
+      line-height: 75px;
+      letter-spacing: 0;
+      margin-right: 15px;
+    }
   }
 `
 
