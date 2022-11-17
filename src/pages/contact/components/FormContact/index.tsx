@@ -88,7 +88,7 @@ const FormContact = () => {
             error={errors.services?.message}
           />
         </Fields>
-        <BtnContact isDisabled={Object.keys(errors).length !== 0 && isIntialited} type='submit'>COTIZAR SERVICIO</BtnContact>
+        <BtnContact isDisabled={Object.keys(errors).length !== 0 && isIntialited} type='submit'>Enviar mensaje</BtnContact>
       </form>
     </Container>
   )

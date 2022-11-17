@@ -22,11 +22,10 @@ const NavDesktop = () => {
       <div id="indicator" />
       <Container isTop={isTop}>
         <nav>
-          <Logo>
+          <Logo><Link href="/">
             <h2 className='full-logo'><span>F.</span>Arriagada</h2>
             <h2 className='short-logo'><span>F.</span> Arriagada</h2>
-            
-          </Logo>
+          </Link> </Logo>
           {
             router.pathname === '/' ? 
               <>
@@ -46,7 +45,7 @@ const NavDesktop = () => {
       <Link href="/contacto">
         <ContactBtn>
           <Image src='/icons/contact-icon.svg' alt="Contact Icon" width={16} height={16} />
-          <span>Contáctame</span>
+          <span>Contacto</span>
         </ContactBtn>
       </Link>
 

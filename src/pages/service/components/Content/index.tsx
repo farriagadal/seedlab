@@ -57,7 +57,7 @@ const Content = ({ Body }: any) => {
           Además de mi experiencia laboral, continuamente me encuentro aprendiendo nuevas tecnologías y metodologías de desarrollo.
           Desarrollando aplicaciones para clientes particulares y proyectos personales por diversión.
           <br /><br />
-          Para más información puedes descargar mi CV en el siguiente enlace:
+          Para más información puedes descargar mi CV en el siguiente botón:
         </p>
         <a href="/CV-FernandoArriagada-EN.pdf" target="_blank">
           <BtnContact>DESCARGAR CV</BtnContact>

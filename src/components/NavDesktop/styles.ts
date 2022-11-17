@@ -60,6 +60,7 @@ export const Container = styled.div<ContainerProps>`
     }
   }
 
+
   &:hover {
     background: ${props => props.isTop ? 'var(--color-1)' : 'var(--color-2)'};
 
@@ -95,6 +96,10 @@ export const MenuOption = styled.div`
   font-size: 14px;
   letter-spacing: 0.1em;
   margin-left: 76px;
+
+  &:first-child {
+    margin-left: auto;
+  }
 `
 
 export const ContactBtn = styled.div`
