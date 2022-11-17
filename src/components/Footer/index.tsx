@@ -11,15 +11,12 @@ const Footer = () => {
       </Link>
       <p>Fernando Arriagada Portafolio Web - Chile</p>
       <Icons>
-        <Link href="/">
-          <Image src='/icons/facebook-icon.svg' alt="facebook" width={18} height={18} />
-        </Link>
-        <Link href="/">
-          <Image src='/icons/facebook-icon.svg' alt="facebook" width={18} height={18} />
-        </Link>
-        <Link href="/">
-          <Image src='/icons/facebook-icon.svg' alt="facebook" width={18} height={18} />
-        </Link>
+        <a href="https://github.com/farriagadal" target="_blank" rel="noreferrer">
+          <Image src='/icons/github.svg' alt="github" width={18} height={18} />
+        </a>
+        <a href="https://www.linkedin.com/in/fernando-arriagada/" target="_blank" rel="noreferrer">
+          <Image src='/icons/linkedin.svg' alt="linkedin" width={18} height={18} />
+        </a>
       </Icons>
     </Container>
   )

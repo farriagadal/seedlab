@@ -45,6 +45,11 @@ export const Icons = styled.div`
   display: flex;
   align-items: center;
 
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
   @media only screen and (max-width: 765px) {
     margin: 20px 0;
   }
@@ -54,6 +59,13 @@ export const Icons = styled.div`
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:first-child {
+      img {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 `
