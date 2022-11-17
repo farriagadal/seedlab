@@ -29,17 +29,15 @@ const NavMobile = () => {
             {
               router.pathname === '/' ?
                 <>
-                  <a href="/#services">Servicios</a>
-                  <a href="/#ourvalues">Nuestro Valor</a>
-                  <a href="/#howworks">Cómo Trabajamos</a>
-                  <a href="/#techs">Tecnologías</a>
+                  <a href="/#techs">Stacks</a>
+                  <a href="/#ourvalues">¿Quien soy?</a>
+                  <a href="/#content">Experiencia</a>
                 </>
                 :
                 <>
-                  <Link href="/#services">Servicios</Link>
-                  <Link href="/#ourvalues">Nuestro Valor</Link>
-                  <Link href="/#howworks">Cómo Trabajamos</Link>
-                  <Link href="/#techs">Tecnologías</Link>
+                  <Link href="/#techs">Stacks</Link>
+                  <Link href="/#ourvalues">¿Quien soy?</Link>
+                  <Link href="/#content">Experiencia</Link>
                 </>
             }
   

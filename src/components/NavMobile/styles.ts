@@ -73,7 +73,7 @@ export const MenuList = styled.div`
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.1em;
-    color: var(--color-1);
+    color: white;
   }
 
   @keyframes slideleft {
