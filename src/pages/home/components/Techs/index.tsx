@@ -53,17 +53,16 @@ const Techs = () => {
       //   setIsShow(true)
       // }
     }, { threshold: 1 })
-    observer.observe(document.querySelector('.techs-index'))
+    observer.observe(document.querySelector('#techs-index-1'))
   }, [])
 
   return (
     <div id="techs" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <Container isActive={isShow || isHover}>
         <Text>
-          <label>Stacks</label>
+          <label id="techs-index-1">Stacks</label>
           <h2>Eterno aprendiz</h2>
           <p>Me apasiona aprender sobre herramientas y metodologías que me permitan construir aplicaciones cada vez mejor, otorgando mayor profesionalismo al desarrollar software y ofrecerle al usuario una mejor experiencia.</p>
-          <span className="techs-index" />
         </Text>
         <List>
           {techsCards.map((card, index) => (
@@ -71,7 +70,6 @@ const Techs = () => {
               <Image src={card.img} alt={card.alt} fill />
             </Tech>
           ))}
-          <span className="techs-index" />
         </List>
       </Container>
     </div>
