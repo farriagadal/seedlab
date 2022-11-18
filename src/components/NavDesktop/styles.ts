@@ -96,10 +96,6 @@ export const MenuOption = styled.div`
   font-size: 14px;
   letter-spacing: 0.1em;
   margin-left: 76px;
-
-  &:first-child {
-    margin-left: auto;
-  }
 `
 
 export const ContactBtn = styled.div`
