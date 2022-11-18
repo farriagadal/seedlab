@@ -17,8 +17,8 @@ export const Container = styled.div<ContainerProps>`
   @media only screen and (max-width: 765px) {
     display: block;
     padding: 0px 20px 120px 20px;
-    /* opacity: 1;
-    transform: translateY(0px); */
+    opacity: 1;
+    transform: translateY(0px);
   }
 `
 
