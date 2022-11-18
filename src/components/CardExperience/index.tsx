@@ -9,16 +9,20 @@ const CardExperience = ({ children, index }: any) => {
       if (entries[0].intersectionRatio === 1) {
         setIsShow(true)
       } else {
-        setTimeout(() => {
-          setIsShow(false)
-        }, 2000)
+        setIsShow(false)
       }
     }, { threshold: 1 })
     observer.observe(document.querySelector(`#experience-${index}`))
     
   }, [])
 
-  return <Container show={isShow} id={`experience-${index}`}>{ children }</Container>
+  return (
+    <>
+      <span  id={`experience-${index}`}/>
+      <Container show={isShow}>{ children }</Container>
+    </>
+  )
+  
 }
 
 export default CardExperience
