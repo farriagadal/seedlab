@@ -1,25 +1,11 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
-import ReactPixel from 'react-facebook-pixel'
 import Head  from 'next/head'
+import dynamic from 'next/dynamic'
+
+export const FacebookPixelWithNoSSR = dynamic(() => import('src/components/FacebookPixel'), {
+  ssr: false
+})
 
 const FacebookPixel = () => {
-
-  // useEffect(() => {
-  //   const advancedMatching: any = { em: 'farriagadal94@gmail.com' } // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
-  //   const options = {
-  //     autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
-  //     debug: false, // enable logs
-  //   }
-  //   setTimeout(() => {
-  //     if (window && typeof window !== 'undefined') {
-  //       ReactPixel.init('3082924931783292', advancedMatching, options)
-  //       ReactPixel.pageView()
-  //     }
-  //   }, 5000)
-    
-  // }, [])
-
   return (
     <Head>
       <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
