@@ -5,26 +5,48 @@ import Footer from 'src/components/Footer'
 import Header from 'src/components/Header'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import ReactPixel from 'react-facebook-pixel'
 
+import dynamic from 'next/dynamic'
+
+const FacebookPixelWithNoSSR = dynamic(() => import('src/components/FacebookPixel'), {
+  ssr: false
+})
 
 export default function App({ Component, pageProps }: AppProps) {
-  const router = useRouter()
+  // const router = useRouter()
 
-  useEffect(() => {
-    import('react-facebook-pixel')
-      .then((x) => x.default)
-      .then((ReactPixel) => {
-        ReactPixel.init('3082924931783292') // facebookPixelId
-        ReactPixel.pageView()
+  // useEffect(() => {
+  //   import('react-facebook-pixel')
+  //     .then((x) => x.default)
+  //     .then((ReactPixel) => {
+  //       ReactPixel.init('3082924931783292') // facebookPixelId
+  //       // ReactPixel.pageView()
 
-        router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView()
-        })
-      })
-  }, [router.events])
+  //       // router.events.on('routeChangeComplete', () => {
+  //       //   ReactPixel.pageView()
+  //       // })
+  //     })
+  // }, [router.events])
+
+  // useEffect(() => {
+  //   const advancedMatching: any = { em: 'farriagadal94@gmail.com' } // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
+  //   const options = {
+  //     autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+  //     debug: false, // enable logs
+  //   }
+  //   setTimeout(() => {
+  //     if (window && typeof window !== 'undefined') {
+  //       ReactPixel.init('3082924931783292', advancedMatching, options)
+  //     }
+  //   }, 5000)
+    
+  // }, [window])
+  
 
   return (
     <>
+      <FacebookPixelWithNoSSR />
       <Header />
       <Transition>
         <Component {...pageProps} />
