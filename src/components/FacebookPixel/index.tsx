@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import ReactPixel from 'react-facebook-pixel'
+import Head  from 'next/head'
 
 const FacebookPixel = () => {
 
@@ -20,7 +21,7 @@ const FacebookPixel = () => {
   // }, [])
 
   return (
-    <>
+    <Head>
       <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -35,7 +36,7 @@ const FacebookPixel = () => {
       <noscript dangerouslySetInnerHTML={{ __html: `<img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=3082924931783292&ev=PageView&noscript=1"/></noscript>` }}
       />
-    </>
+    </Head>
   )
 }
 
