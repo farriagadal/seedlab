@@ -31,8 +31,8 @@ const Heading = () => {
             <BgImg show={imageId === 0}><Image src='/images/wireframes.jpg' alt="Seedlab Fondo" fill /></BgImg>
           </SplideSlide>
           <SplideSlide>
-            <h1>Plasmar tu producto</h1>
-            <p>Estamos aquí para ayudarle a diseñar, construir, implementar y escalar su idea. Contamos con profesionales que se encargaran de brindar el mejor diseño y experiencia de usuario en cada desarrollo.</p>
+            <h1>Plasmar tu idea</h1>
+            <p>Estamos aquí para ayudarle a diseñar, construir, implementar y escalar su producto. Contamos con profesionales que se encargaran de brindar el mejor diseño y experiencia de usuario en cada desarrollo.</p>
             <BgImg show={imageId === 1}><Image src='/images/desarrolla-tu-producto.jpg' alt="Seedlab Fondo" fill /></BgImg>
           </SplideSlide>
           <SplideSlide>

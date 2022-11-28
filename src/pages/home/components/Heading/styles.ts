@@ -43,6 +43,7 @@ export const Container = styled.div`
 
     @media only screen and (max-width: 765px) {
       padding-right: 20px;
+      font-size: 65px;
     }
 
     &::after {
