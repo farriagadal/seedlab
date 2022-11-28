@@ -33,14 +33,15 @@ export default function App({ Component, pageProps }: AppProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
-        <meta property="og:url" content="https://www.example.com" />
-        <meta property="og:title" content="Open Graph Title" />
-        <meta property="og:description" content="Open Graph Description" />
-        <meta property="og:image" content="https://www.example.com/og-image.jpg" />
-        <meta property="og:site_name" content="YourSiteName" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@site" />
-        <meta name="twitter:creator" content="@handle" />
+        <meta property="og:type" content="landing" />
+        <meta property="og:url" content="https://www.seedlabs.cl/" />
+        <meta property="og:title" content="Desarrollo Web y Aplicaciones Móviles" />
+        <meta property="og:description" content="Contamos con amplia experiencia en el desarrollo de software con el propósito de optimizar y automatizar procesos dentro de tu negocio." />
+        <meta property="og:image" content="https://www.seedlabs.cl/images/graficos.jpg" />
+        <meta property="og:site_name" content="Seedlabs.cl" />
+        <meta name="twitter:card" content="https://www.seedlabs.cl/images/graficos.jpg" />
+        <meta name="twitter:site" content="@seedlabs.cl" />
+        <meta name="twitter:creator" content="@Fernando.A" />
       </Head>
       <FacebookPixelWithNoSSR />
       <Header />
