@@ -26,7 +26,7 @@ export const Container = styled.div<ContainerProps>`
     transform: translateY(-60px);
   }
 
-  h4 {
+  h3 {
     font-family: 'Poppins';
     font-weight: 800;
     font-size: 26px;

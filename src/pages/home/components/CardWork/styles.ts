@@ -16,7 +16,7 @@ export const Container = styled.div<ContainerProps>`
     color: #7E888D;
   }
 
-  h4 {
+  h3 {
     &::after {
       content: '.';
       color: var(--color-2);
@@ -51,7 +51,7 @@ export const Title = styled.div`
     color: var(--color-4);
   }
 
-  h4 {
+  h3 {
     font-family: 'Poppins';
     font-weight: 800;
     font-size: 26px;

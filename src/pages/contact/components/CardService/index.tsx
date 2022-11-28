@@ -21,7 +21,7 @@ const CardService = ({ Icon, title, onChange }: CardServiceProps) => {
   return (
     <Container isActive={isSelected} onClick={() => handleClick()}>
       <IconWrapper><Icon /></IconWrapper>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
     </Container>
   )
 }

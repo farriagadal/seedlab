@@ -17,7 +17,7 @@ const CardService = ({ Icon, title, description, url = '/' }: CardServiceProps) 
   return (
     <Container isActive={isHover} onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
       <IconWrapper isActive={isHover}><Icon /></IconWrapper>
-      <h4>{title}</h4>
+      <h3>{title}</h3>
       <p>
         {description}
       </p>

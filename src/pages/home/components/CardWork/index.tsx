@@ -18,7 +18,7 @@ const CardWork = ({ Icon, number, title, description }: CardWorkProps) => {
       </IconContainer>
       <Title>
         <span>0{number}</span>
-        <h4>{title}</h4>
+        <h3>{title}</h3>
       </Title>
       <p>{description}</p>
     </Container>

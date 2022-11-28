@@ -26,7 +26,7 @@ export const Container = styled.div<ContainerProps>`
     filter: brightness(0.5);
   }
 
-  h4 {
+  h3 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
