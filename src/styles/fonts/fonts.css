@@ -1,4 +1,5 @@
 @font-face {
+  font-display: auto;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
@@ -7,6 +8,7 @@
 }
 
 @font-face {
+  font-display: auto;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -15,6 +17,7 @@
 }
 
 @font-face {
+  font-display: auto;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
@@ -23,6 +26,7 @@
 }
 
 @font-face {
+  font-display: auto;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
@@ -31,6 +35,7 @@
 }
 
 @font-face {
+  font-display: auto;
   font-family: "Nunito";
   font-style: italic;
   font-weight: 400;
@@ -39,6 +44,7 @@
 }
 
 @font-face {
+  font-display: auto;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 300;
