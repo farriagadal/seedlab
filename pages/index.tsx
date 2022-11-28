@@ -37,32 +37,12 @@ const cardServices = [
   }
 ]
 
-const structuredData = {
-  '@context': 'https://schema.org',
-  '@type': 'Company',
-  headline: 'Desarrollo Web y Aplicaciones Móviles',
-  description: 'Contamos con amplia experiencia en el desarrollo de software con el propósito de optimizar y automatizar procesos dentro de tu negocio.',
-  author: [
-    {
-      '@type': 'Fernando',
-      name: 'Fernando A.',
-    },
-  ],
-  datePublished: '2022-11-28T09:00:00.000Z',
-}
-
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Desarrollo Web y Aplicaciones Móviles</title>
         <meta name="description" content="Contamos con amplia experiencia en el desarrollo de software con el propósito de optimizar y automatizar procesos dentro de tu negocio." />
-        <link rel="icon" href="/favicon.ico" />
-        <script
-          key="structured-data"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
       </Head>
       <Heading />
       <Services title="¿Qué ofrecemos?" services={cardServices}/>
