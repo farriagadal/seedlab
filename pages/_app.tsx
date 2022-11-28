@@ -32,6 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0" />
         <meta property="og:url" content="https://www.example.com" />
         <meta property="og:title" content="Open Graph Title" />
         <meta property="og:description" content="Open Graph Description" />
