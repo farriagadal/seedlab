@@ -1,5 +1,5 @@
 import React from 'react'
-import NextDocument from 'next/document'
+import NextDocument, { Html } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class Document extends NextDocument {
@@ -15,10 +15,10 @@ export default class Document extends NextDocument {
       return {
         ...initialProps,
         styles: (
-          <div style={{scrollBehavior:'smooth'}}>
+          <Html lang='es' style={{scrollBehavior:'smooth'}}>
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </div>
+          </Html>
         )
       }
     } finally {

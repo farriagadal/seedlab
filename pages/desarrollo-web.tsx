@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>SEEDLAB.CL - Desarrollo Web</title>
+        <title>SEEDLABS.CL - Desarrollo Web</title>
       </Head>
       <Heading />
       <Content />
