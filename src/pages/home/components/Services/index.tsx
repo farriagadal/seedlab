@@ -25,9 +25,6 @@ const Services = ({services, title}: ServicesProps) => {
           // flickPower: 500,
           breakpoints: {
             640 : {
-              speed: 300,
-              interval: 1000,
-              autoplay: true,
               dragMinThreshold: 10,
               flickPower: 10,
               perPage: 1,
