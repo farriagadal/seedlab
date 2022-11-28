@@ -1,2 +1,3 @@
+Sitemap: https://www.seedlabs.cl/sitemap.xml
 User-agent: *
 Allow: /
