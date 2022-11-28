@@ -39,7 +39,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:description" content="Contamos con amplia experiencia en el desarrollo de software con el propósito de optimizar y automatizar procesos dentro de tu negocio." />
         <meta property="og:image" content="https://www.seedlabs.cl/images/graficos.jpg" />
         <meta property="og:site_name" content="Seedlabs.cl" />
-        <meta name="twitter:card" content="https://www.seedlabs.cl/images/graficos.jpg" />
+        
+        <meta name="twitter:image" content="https://www.seedlabs.cl/images/graficos.jpg" />
+        <meta name="twitter:card" content="Seedlabs.cl" />
         <meta name="twitter:site" content="@seedlabs.cl" />
         <meta name="twitter:creator" content="@Fernando.A" />
       </Head>
