@@ -8,7 +8,7 @@ const Header = () => {
   const [isReady, setIsReady] = useState(false)
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768)
+    setIsMobile(window ? window.innerWidth < 768 : true)
     setIsReady(true)
   }, [])
   
