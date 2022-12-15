@@ -49,8 +49,8 @@ const Techs = () => {
       <Container isActive={isShow || isHover}>
         <Text>
           <label>Tecnologías</label>
-          <h2>Mantente actualizado</h2>
-          <p>Las nuevas tecnologías y herramientas nos permiten construir sitios web y aplicaciones asegurando una calidad y experiencia de usuario de última generación.
+          <h2>Te mantenemos actualizado</h2>
+          <p>Utilizamos las tecnologías y herramientas mejores valoradas en el mercado del desarrollo de software para construir sitios web y aplicaciones con una calidad y experiencia superior.
           </p>
         </Text>
         <List>
