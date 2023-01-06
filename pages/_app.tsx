@@ -26,6 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <meta name="google-site-verification" content="8bFMPuChcgxD3t-uIPoSwy0SkwIGvD0BKYtCsKe3zRk" />
         <link rel="icon" href="/favicon.ico" />
         <script
           key="structured-data"
