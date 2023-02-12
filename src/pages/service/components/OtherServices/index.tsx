@@ -2,11 +2,6 @@ import CardService from 'src/components/CardService'
 import { Container, List } from './styles'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css'
-import IconWeb1 from 'public/icons/how-work-1.svg'
-import IconWeb2 from 'public/icons/how-work-2.svg'
-import IconWeb3 from 'public/icons/web-icon.svg'
-import IconWeb4 from 'public/icons/how-work-3.svg'
-
 
 type OtherServicesProps = {
   services: any[]

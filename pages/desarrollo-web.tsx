@@ -5,22 +5,11 @@ import IconWeb1 from 'public/icons/how-work-1.svg'
 import IconWeb2 from 'public/icons/how-work-2.svg'
 import IconWeb4 from 'public/icons/how-work-3.svg'
 import OtherServices from 'src/pages/service/components/OtherServices'
+import services from 'data/services.js'
 
 
-const cardServices = [
-  {
-    Icon: IconWeb2,
-    url: '/desarrollo-web'
-  },
-  {
-    Icon: IconWeb1,
-    url: '/desarrollo-web'
-  },
-  {
-    Icon: IconWeb4,
-    url: '/desarrollo-web'
-  }
-]
+// get last 3 services
+const cardServices = services.slice(0, 3)
 
 export default function Home() {
   return (
