@@ -31,12 +31,18 @@ export default function ArticlePage({ article }: any) {
   )
 }
 
-ArticlePage.getInitialProps = async ({ req, query }: any) => {
+ArticlePage.getInitialProps = async ({ req, res, query }: any) => {
   // const hostUrl = req.headers.host
   // const protocol = req.headers.referer.split(':')[0]
-  const res = await axios.get('http://127.0.0.1:3000/api/article', { params: { slug: query.slug } })
-
+  let article = {}
+  try {
+    const res = await axios.get('http://127.0.0.1:3000/api/article', { params: { slug: query.slug } })
+    article = res.data
+  } catch (error) {
+    res.writeHead(302, { Location: '/404' })
+    res.end()
+  }
   return {
-    article: res.data
+    article
   }
 }

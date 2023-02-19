@@ -20,21 +20,6 @@ export const Container = styled.div`
     padding-bottom: 80px;
   }
 
-  p {
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0.04em;
-    color: var(--color-5);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    @media only screen and (max-width: 765px) {
-      bottom: 40px;
-      text-align: center;
-      width: 100%;
-    }
-  }
 `
 
 export const Icons = styled.div`
@@ -51,5 +36,26 @@ export const Icons = styled.div`
     &:last-child {
       margin-right: 0;
     }
+  }
+`
+
+export const Text = styled.div`
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align-last: center;
+
+  @media only screen and (max-width: 765px) {
+    bottom: 40px;
+    width: 100%;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: var(--color-5);
+    margin: 0px;
   }
 `

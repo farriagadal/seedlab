@@ -12,6 +12,12 @@ export const Container = styled.div<ContainerProps>`
   background: var(--color-1);
   transition: background 0.2s ease-in-out;
 
+  .article-link {
+    background: var(--color-2);
+    padding: 5px 20px;
+    border-radius: 10px 0;
+  }
+
   nav {
     align-items: flex-end;
     max-width: var(--container-width);

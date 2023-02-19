@@ -27,10 +27,10 @@ const NavDesktop = () => {
               <Image src='/icons/logo.svg' alt="SeedLab Logo" width={245} height={46} />
             </Link>
             <Link href="/" className="short-logo">
-              <Image src='/icons/short-logo.svg' alt="SeedLab Logo" width={133} height={19} />
+              <Image src='/icons/short-logo.svg' alt="SeedLab Logo" width={153} height={19} />
             </Link>
             <Link href="/" className="short-logo-black">
-              <Image src='/icons/short-logo-black.svg' alt="SeedLab Logo" width={133} height={19} />
+              <Image src='/icons/short-logo-black.svg' alt="SeedLab Logo" width={153} height={19} />
             </Link>
           </Logo>
           {
@@ -39,14 +39,14 @@ const NavDesktop = () => {
                 <MenuOption><a href="/#services">Servicios</a></MenuOption>
                 <MenuOption><a href="/#ourvalues">Nuestro Valor</a></MenuOption>
                 <MenuOption><a href="/#howworks">Como trabajamos</a></MenuOption>
-                <MenuOption><Link href="/articulos">Artículos</Link></MenuOption>
+                <MenuOption><Link className='article-link' href="/articulos">Artículos</Link></MenuOption>
               </>
               :
               <>
                 <MenuOption><Link href="/#services">Servicios</Link></MenuOption>
                 <MenuOption><Link href="/#ourvalues">Nuestro Valor</Link></MenuOption>
                 <MenuOption><Link href="/#howworks">Como trabajamos</Link></MenuOption>
-                <MenuOption><Link href="/articulos">Artículos</Link></MenuOption>
+                <MenuOption><Link className='article-link' href="/articulos">Artículos</Link></MenuOption>
               </>
           }
         </nav>

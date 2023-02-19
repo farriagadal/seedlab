@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Container, Icons } from './styles'
+import { Container, Icons, Text } from './styles'
 import Image from 'next/image'
 
 const Footer = () => {
@@ -9,17 +9,20 @@ const Footer = () => {
       <Link href="/" className="full-logo">
         <Image src='/icons/logo.svg' alt="SeedLab Logo" width={245} height={46} />
       </Link>
-      <p>SeedLab 2022 - Todos los derechos reservados</p>
+      <Text>
+        <p>SeedLab 2022 - Todos los derechos reservados</p>
+        <p>Providencia, Av. Italia 850. Santiago, Chile.</p>
+      </Text>
       <Icons>
-        <Link href="/">
-          <Image src='/icons/facebook-icon.svg' alt="facebook" width={18} height={18} />
-        </Link>
-        <Link href="/">
-          <Image src='/icons/facebook-icon.svg' alt="facebook" width={18} height={18} />
-        </Link>
-        <Link href="/">
-          <Image src='/icons/facebook-icon.svg' alt="facebook" width={18} height={18} />
-        </Link>
+        <a href="#">
+          <Image src='/icons/instagram.svg' alt="Facebook Logo Svg" width={25} height={25} />
+        </a>
+        <a href="#">
+          <Image src='/icons/facebook.svg' alt="Facebook Logo Svg" width={30} height={30} />
+        </a>
+        <a href="#">
+          <Image src='/icons/linkedin.svg' alt="Linkedin Logo Svg" width={30} height={30} />
+        </a>
       </Icons>
     </Container>
   )

@@ -14,8 +14,12 @@ export default function handler(
 ) {
   const slug = req.query.slug
   const filePath = path.join(process.cwd(), `data/articles/${slug}.json`)
-  const response = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-
-  console.log('response', response)
-  res.status(200).json(response)
+  try {
+    const response = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+    console.log('response', response)
+    res.status(200).json(response)
+  } catch (error) {
+    console.log('error', error)
+    res.status(404).json({ message: 'Article not found' })
+  }
 }
