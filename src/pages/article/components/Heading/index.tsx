@@ -1,20 +1,31 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Container, BgImg, Bar, BackBtn, ArrowDown, Text } from './styles'
-import IconWeb1 from 'public/icons/how-work-1.svg'
+import { Container, BgImg, Bar, BackBtn, ArrowDown, Text, Label } from './styles'
+import { format } from 'date-fns'
 
 type HeadingProps = {
-  title: string
+  title: string,
+  image?: string,
+  date?: any,
+  category?: string
 }
 
-const Heading = ({ title }: HeadingProps) => {
+const Heading = ({ title, image, date, category }: HeadingProps) => {
+
+  const getDate = () => {
+    const newDate = new Date(date)
+    return <label>{format(newDate, 'dd/MM/yyyy')}</label>
+  }
+
   return (
     <>
       <Container>
-        <BgImg />
+        <BgImg src={image} />
         <Text>
           <Image src='/icons/how-work-1.svg' alt="Web Logo" width={77} height={77} />
           <h2>{ title }</h2>
+          { date && getDate() }
+          { category && <Label>{category}</Label> }
         </Text>
       </Container>
       <Bar>

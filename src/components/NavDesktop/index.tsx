@@ -39,14 +39,14 @@ const NavDesktop = () => {
                 <MenuOption><a href="/#services">Servicios</a></MenuOption>
                 <MenuOption><a href="/#ourvalues">Nuestro Valor</a></MenuOption>
                 <MenuOption><a href="/#howworks">Como trabajamos</a></MenuOption>
-                <MenuOption><a href="/#techs">Tecnologías</a></MenuOption>
+                <MenuOption><Link href="/articulos">Artículos</Link></MenuOption>
               </>
               :
               <>
                 <MenuOption><Link href="/#services">Servicios</Link></MenuOption>
                 <MenuOption><Link href="/#ourvalues">Nuestro Valor</Link></MenuOption>
                 <MenuOption><Link href="/#howworks">Como trabajamos</Link></MenuOption>
-                <MenuOption><Link href="/#techs">Tecnologías</Link></MenuOption>
+                <MenuOption><Link href="/articulos">Artículos</Link></MenuOption>
               </>
           }
         </nav>

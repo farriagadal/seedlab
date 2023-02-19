@@ -2,18 +2,12 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import fs from 'fs'
 import path from 'path'
-import axios from 'axios'
-
-// type Data = {
-//   name: string
-// }
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
-  const slug = req.query.slug
-  const filePath = path.join(process.cwd(), `data/articles/${slug}.json`)
+  const filePath = path.join(process.cwd(), 'data/articles/articles.json')
   const response = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 
   console.log('response', response)

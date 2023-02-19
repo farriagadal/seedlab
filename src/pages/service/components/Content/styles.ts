@@ -27,7 +27,7 @@ export const Container = styled.div`
     background: var(--color-2);
     border-radius: 30px 0px;
     padding: 60px;
-    margin: 70px -60px;
+    margin: 18px -60px 18px -60px;
     list-style-type: none;
     position: relative;
 

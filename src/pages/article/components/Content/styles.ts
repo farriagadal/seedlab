@@ -13,6 +13,18 @@ export const Container = styled.div`
     margin: auto;
   }
 
+  .cotenthtml {
+    &>p:first-child {
+      color: white;
+    }
+
+    h2 {
+      font-size: 35px;
+      margin-bottom: 10px;
+      margin-top: 50px;
+    }
+  }
+
   b p {
     color: white;
     font-weight: 700;
@@ -27,7 +39,7 @@ export const Container = styled.div`
     background: var(--color-2);
     border-radius: 30px 0px;
     padding: 60px;
-    margin: 70px -60px;
+    margin: 18px -60px 18px -60px;
     list-style-type: none;
     position: relative;
 

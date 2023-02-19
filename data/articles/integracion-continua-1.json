@@ -1,0 +1,13 @@
+
+{
+  "slug": "que-es-la-integracion-continua-por-que-es-importante",
+  "title": "¿Qué es la Integración Continua? ¿Por qué es importante?",
+  "description": "La Integración Continua (CI) es una importante técnica de desarrollo de software que permite la integración, compilación y prueba automática de código. Descubre su importancia para los equipos de desarrollo de software.",
+  "image": "https://images.unsplash.com/photo-1579021714203-f9ccb8c7b8f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+  "content": "<p>La Integración Continua (CI) es una importante técnica de desarrollo de software que permite la integración, compilación y prueba automática de código. Esto permite a los equipos de desarrollo de software mejorar la calidad de sus productos y reducir los tiempos de entrega. </p><h2>¿Qué es la Integración Continua? </h2><p>La Integración Continua es un proceso automatizado que se ejecuta cada vez que se realiza un cambio en el código fuente. Esto significa que cada vez que un equipo hace un cambio, el código se integra, se compila y se prueba de forma automática. Esto significa que los equipos de desarrollo pueden detectar y corregir errores de forma más rápida y eficiente. </p><h2>¿Por qué es importante la Integración Continua? </h2><p>La Integración Continua es una herramienta muy importante para los equipos de desarrollo de software. Permite a los equipos detectar errores de forma más rápida y corregirlos antes de que se conviertan en problemas más grandes. Esto reduce significativamente los tiempos de entrega y mejora la calidad del producto. La Integración Continua también permite a los equipos comprobar la calidad del código antes de una entrega, lo que reduce los tiempos de entrega y mejora la calidad del producto. </p>",
+  "references": [
+    "https://www.atlassian.com/continuous-delivery/ci",
+    "https://www.tutorialspoint.com/continuous_integration/index.htm",
+    "https://tech.economist.com/what-is-continuous-integration/"
+  ]
+}

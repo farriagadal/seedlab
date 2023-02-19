@@ -1,0 +1,14 @@
+
+{
+    "slug": "que-es-la-integracion-continua",
+    "title": "¿Qué es la integración continua? ¿Por qué es importante?",
+    "description": "La integración continua es una práctica de desarrollo de software en la que los cambios en el código fuente se combinan con frecuencia a un repositorio central, con el fin de asegurar la calidad y el rendimiento del software, así como acelerar su desarrollo.",
+    "image": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+    "content": "<p>La integración continua (CI) es una práctica de desarrollo de software donde los cambios en el código se combinan en un repositorio central con frecuencia. Esto permite asegurar la calidad y el rendimiento del software, así como acelerar el desarrollo. La CI se utiliza para permitir que los equipos de desarrollo de software liberan un producto con mayor rapidez, sin comprometer la calidad.</p><h2>¿Qué beneficios ofrece la integración continua?</h2><p>La integración continua ofrece varios beneficios, tales como:</p><ul><li>Mejora la calidad del código: El proceso de integración continua permite detectar y corregir errores antes de que se produzcan en un entorno de producción.</li><li>Acelera el proceso de desarrollo: La integración continua reduce el tiempo necesario para pasar entre distintas etapas del desarrollo, como la prueba y el lanzamiento.</li><li>Promueve la colaboración entre los equipos: La integración continua permite que los equipos de desarrollo trabajen juntos de forma más eficiente, ya que cualquier cambio realizado en el código se refleja inmediatamente en el repositorio central.</li></ul><h2>¿Cómo funciona la integración continua?</h2><p>La integración continua se lleva a cabo a través de una herramienta de integración continua (CI) como Jenkins, Travis CI o GitLab CI. Estas herramientas son responsables de detectar los cambios realizados en el código y ejecutar una serie de pruebas para asegurar la calidad del código y su conformidad con los requisitos del proyecto.</p><p>Una vez que se completan las pruebas, la herramienta de integración continua genera un informe que indica si el código cumple con los requisitos. Si el código pasa las pruebas, se combina con el repositorio central y se libera al público.</p>",
+    "references": [
+        "https://www.atlassian.com/continuous-delivery/principles/continuous-integration",
+        "https://www.atlassian.com/continuous-delivery/continuous-integration",
+        "https://www.thoughtworks.com/continuous-integration",
+        "https://www.guru99.com/continuous-integration.html"
+    ]
+}

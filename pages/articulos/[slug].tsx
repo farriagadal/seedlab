@@ -18,7 +18,12 @@ export default function ArticlePage({ article }: any) {
       <Head>
         <title>SEEDLABS.CL - Desarrollo Web</title>
       </Head>
-      <Heading title={article.title} />
+      <Heading
+        title={article.title}
+        image={article.image}
+        date={article.date_updated || article.date_created}
+        category={article.category || 'Artículo'}
+      />
       <Content article={article} />
       <References references={article.references} />
       <OtherServices title="Otros servicios" services={cardServices} />
@@ -27,9 +32,9 @@ export default function ArticlePage({ article }: any) {
 }
 
 ArticlePage.getInitialProps = async ({ req, query }: any) => {
-  const hostUrl = req.headers.host
-  const protocol = req.headers.referer.split(':')[0]
-  const res = await axios.get(`${protocol}://${hostUrl}/api/article`, { params: { slug: query.slug } })
+  // const hostUrl = req.headers.host
+  // const protocol = req.headers.referer.split(':')[0]
+  const res = await axios.get('http://127.0.0.1:3000/api/article', { params: { slug: query.slug } })
 
   return {
     article: res.data

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Container, BtnContact, Divider } from './styles'
+import { Container, BtnContact } from './styles'
 
 type ContentProps = {
   article?: any
@@ -9,9 +9,9 @@ const Content = ({ article }: ContentProps) => {
   return (
     <>
       <Container id="content">
-        <div dangerouslySetInnerHTML={{ __html: article.content }} />
+        <b><p> {article?.resume} </p></b>
+        <div className='cotenthtml' dangerouslySetInnerHTML={{ __html: article.content }} />
       </Container>
-      {/* <Divider /> */}
     </>
   )
 }

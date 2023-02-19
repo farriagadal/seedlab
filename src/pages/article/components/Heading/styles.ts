@@ -29,13 +29,17 @@ export const Container = styled.div`
   }
 `
 
+type BgImgProps = {
+  src?: string
+}
+
 export const BgImg = styled.div`
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/wireframes.jpg');
+  background-image: url(${(props: BgImgProps) => props.src || '/images/wireframes.jpg'});
   background-size: cover;
   filter: grayscale(1);
   animation: expand-opacity linear 20s;
@@ -182,10 +186,29 @@ export const Text = styled.div`
     line-height: 100%;
     color: var(--color-3);
     max-width: 700px;
+    margin-bottom: 10px;
 
     &::after {
       content: '.';
       color: var(--color-2);
     }
   }
+
+  label {
+    color: white;
+    display: inline-flex;
+    margin-top: -30px;
+    opacity: 0.7;
+    font-weight: 100;
+    font-size: 15px;
+  }
+`
+
+export const Label = styled.div`
+  border: solid;
+  display: inline-flex;
+  margin-left: 18px;
+  padding: 0 10px;
+  border-color: #1fbf9b;
+  color: white;
 `
