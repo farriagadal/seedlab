@@ -14,7 +14,7 @@ export default function ArticlesPage({ articles }: any) {
 }
 
 ArticlesPage.getInitialProps = async ({ req, query }: any) => {
-  const res = await axios.get('http://127.0.0.1:3000/api/articles')
+  const res = await axios.get('https://www.seedlabs.cl/api/articles')
   return {
     articles: res.data
   }
