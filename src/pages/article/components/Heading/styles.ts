@@ -20,12 +20,12 @@ export const Container = styled.div`
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 101%;
+    height: 101%;
     background: linear-gradient(180deg, rgba(2, 23, 32, 0) 0%, var(--color-1) 100%);
     background-blend-mode: multiply;
     mix-blend-mode: normal;
-    z-index: 1;
+    z-index: 11;
   }
 `
 
@@ -169,14 +169,15 @@ export const ArrowDown = styled.a`
 
 export const Text = styled.div`
   width: var(--content-width);
-  z-index: 1;
+  z-index: 11;
   position: absolute;
   left: 50vw;
   transform: translateX(-50%);
+  padding-bottom: 20px;
 
   @media only screen and (max-width: 765px) {
     width: 100%;
-    padding: 0 10px 0 28px;
+    padding: 0 25px 20px 28px;
   }
 
   h2 {
@@ -201,14 +202,19 @@ export const Text = styled.div`
     opacity: 0.7;
     font-weight: 100;
     font-size: 15px;
+    margin-bottom: 10px;
+    margin-right: 18px;
   }
 `
 
-export const Label = styled.div`
-  border: solid;
+type LabelProps = {
+  color?: string
+}
+
+export const Label = styled.div<LabelProps>`
+  /* border: solid; */
   display: inline-flex;
-  margin-left: 18px;
-  padding: 0 10px;
-  border-color: #1fbf9b;
+  padding: 3px 12px;
+  background: ${(props: LabelProps) => props.color || 'var(--color-2)'};
   color: white;
 `

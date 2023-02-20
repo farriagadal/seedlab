@@ -20,6 +20,9 @@ export const Container = styled.div`
     padding-bottom: 80px;
   }
 
+  @media only screen and (max-width: 400px) {
+    padding-bottom: 150px;
+  }
 `
 
 export const Icons = styled.div`
@@ -53,6 +56,7 @@ export const Text = styled.div`
 
   p {
     font-weight: 300;
+    text-align: center;
     font-size: 14px;
     letter-spacing: 0.04em;
     color: var(--color-5);

@@ -7,10 +7,11 @@ type HeadingProps = {
   title: string,
   image?: string,
   date?: any,
-  category?: string
+  category?: string,
+  color?: string
 }
 
-const Heading = ({ title, image, date, category }: HeadingProps) => {
+const Heading = ({ title, image, date, category, color }: HeadingProps) => {
 
   const getDate = () => {
     const newDate = new Date(date)
@@ -22,10 +23,10 @@ const Heading = ({ title, image, date, category }: HeadingProps) => {
       <Container>
         <BgImg src={image} />
         <Text>
-          <Image src='/icons/how-work-1.svg' alt="Web Logo" width={77} height={77} />
+          {/* <Image src='/icons/how-work-1.svg' alt="Web Logo" width={77} height={77} /> */}
           <h2>{ title }</h2>
           { date && getDate() }
-          { category && <Label>{category}</Label> }
+          { category && <Label color={color}>{category}</Label> }
         </Text>
       </Container>
       <Bar>

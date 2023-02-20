@@ -53,3 +53,20 @@ export const Container = styled.div`
     color: var(--color-5);
   }
 `
+
+type CategoryProps = {
+  color?: string
+}
+
+export const Category = styled.div<CategoryProps>`
+  position: absolute;
+  background: ${props => props.color || 'var(--color-2)'};
+  padding: 5px 10px;
+  color: white;
+  max-width: 200px;
+  top: 20px;
+  right: 17px;
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+`

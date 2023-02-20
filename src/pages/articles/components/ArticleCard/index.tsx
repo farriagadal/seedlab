@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import { Container } from './styles'
+import { Container, Category } from './styles'
 import { format } from 'date-fns'
-
+import categories from 'data/categories.json'
 
 type ArticleCardProps = {
   article?: any
@@ -22,6 +22,15 @@ const ArticleCard = ({ article }: ArticleCardProps) => {
   return (
     <>
       <Container>
+        {
+          article.category_id &&
+          <Category color={categories.find((category) => category.id === article.category_id)?.color}>
+            {
+              categories.find((category) => category.id === article.category_id)?.name
+            }
+          </Category>
+        }
+
         <img src={article.image || imgDefault} />
         <p>{article.title}</p>
         <label>{getDate()}</label>

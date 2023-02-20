@@ -5,6 +5,11 @@ export const Container = styled.div`
   margin: auto;
   padding-bottom: 100px;
 
+  @media only screen and (max-width: 765px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   h2 {
     margin-top: 90px;
     margin-bottom: 50px;
@@ -13,10 +18,6 @@ export const Container = styled.div`
       content: '.';
       color: var(--color-2);
     }
-
-    @media only screen and (max-width: 765px) {
-      margin-bottom: 120px;
-    }
   }
 `
 
@@ -24,6 +25,10 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   grid-gap: 30px;
+
+  @media only screen and (max-width: 765px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 `
 
 export const Box = styled.div`

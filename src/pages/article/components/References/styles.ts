@@ -10,6 +10,10 @@ export const Container = styled.div`
     opacity: 0.6;
     margin-bottom: 6px;
   }
+
+  @media only screen and (max-width: 765px) {
+    width: calc(100% - 40px);
+  }
 `
 
 export const Divider = styled.div`

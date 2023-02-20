@@ -8,6 +8,7 @@ import fs from 'fs'
 import path from 'path'
 import axios from 'axios'
 import References from 'src/pages/article/components/References'
+import categories from 'data/categories.json'
 
 // get last 3 services
 const cardServices = services.slice(0, 3)
@@ -22,7 +23,8 @@ export default function ArticlePage({ article }: any) {
         title={article.title}
         image={article.image}
         date={article.date_updated || article.date_created}
-        category={article.category || 'Artículo'}
+        category={article.category_id ? categories.find((category) => category.id === article.category_id)?.name : ''}
+        color={article.category_id ? categories.find((category) => category.id === article.category_id)?.color : ''}
       />
       <Content article={article} />
       <References references={article.references} />

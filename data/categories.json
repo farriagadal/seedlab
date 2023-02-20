@@ -1,0 +1,53 @@
+
+[
+  {
+    "id": 1,
+    "name": "Programación y desarrollo de software",
+    "color": "#1A4F6F"
+  },
+  {
+    "id": 2,
+    "name": "Desarrollo móvil",
+    "color": "#297F4E"
+  },
+  {
+    "id": 3,
+    "name": "Herramientas y mejores prácticas de desarrollo",
+    "color": "#D2682E"
+  },
+  {
+    "id": 4,
+    "name": "Pruebas y control de calidad de software",
+    "color": "#7E3F8F"
+  },
+  {
+    "id": 5,
+    "name": "Diseño de software y arquitectura",
+    "color": "#A91A1A"
+  },
+  {
+    "id": 6,
+    "name": "Desarrollo en la nube y virtualización",
+    "color": "#555555"
+  },
+  {
+    "id": 7,
+    "name": "Metodologías ágiles y de gestión de proyectos",
+    "color": "#87B030"
+  },
+  {
+    "id": 8,
+    "name": "Seguridad de software y protección de datos",
+    "color": "#47A7D8"
+  },
+  {
+    "id": 9,
+    "name": "Desarrollo web y marketing digital",
+    "color": "#F1C40F"
+  },
+  {
+    "id": 10,
+    "name": "Inteligencia artificial y tecnologías emergentes",
+    "color": "#F18FBB"
+  }
+]
