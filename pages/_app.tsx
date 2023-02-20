@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import 'src/styles/main.css'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
@@ -5,6 +6,7 @@ import Transition from 'src/components/Transition'
 import Footer from 'src/components/Footer'
 import Header from 'src/components/Header'
 import { FacebookPixelWithNoSSR } from 'src/components/FacebookPixel'
+import Script from 'next/script'
 
 export default function App({ Component, pageProps }: AppProps) {
 
@@ -47,6 +49,21 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:site" content="@seedlabs.cl" />
         <meta name="twitter:creator" content="@Fernando.A" />
       </Head>
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-NXLK97JFN0"/>
+      <Script
+        id='google-analytics'
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NXLK97JFN0', {
+              page_path: window.location.pathname,
+            });
+          `
+        }}
+      />
       <FacebookPixelWithNoSSR />
       <Header />
       <Transition>
