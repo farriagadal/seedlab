@@ -30,7 +30,7 @@ const Heading = ({ title, image, date, category, color }: HeadingProps) => {
         </Text>
       </Container>
       <Bar>
-        <Link href="/"><BackBtn>
+        <Link href="/articulos"><BackBtn>
           <Image src="/icons/back-arrow.svg" alt="Back" width={21} height={18} /> Volver
         </BackBtn></Link>
         <ArrowDown href="#content">
