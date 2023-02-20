@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>SEEDLABS.CL - Desarrollo Web</title>
+        <title>Seedlabs.cl - Desarrollo Web</title>
       </Head>
       <Heading />
       <Content />

@@ -46,6 +46,10 @@ export const BgImg = styled.div`
   transform: scale(1.2);
   opacity: 0.3;
 
+  @media only screen and (max-width: 765px) {
+    animation: none;
+  }
+
   @keyframes expand-opacity {
     0% {
       transform: scale(1);
@@ -180,11 +184,11 @@ export const Text = styled.div`
     padding: 0 25px 20px 28px;
   }
 
-  h2 {
+  h1 {
     font-family: 'Poppins';
     font-weight: 800;
     font-size: 46px;
-    line-height: 100%;
+    line-height: 98%;
     color: var(--color-3);
     max-width: 700px;
     margin-bottom: 10px;
@@ -193,6 +197,13 @@ export const Text = styled.div`
       content: '.';
       color: var(--color-2);
     }
+
+    @media only screen and (max-width: 765px) {
+      font-size: 40px;
+    }
+
+
+
   }
 
   label {

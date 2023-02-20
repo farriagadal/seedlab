@@ -6,7 +6,7 @@ export default function ArticlesPage({ articles }: any) {
   return (
     <div>
       <Head>
-        <title>SEEDLABS.CL - Desarrollo Web</title>
+        <title>Seedlabs.cl - Desarrollo Web</title>
       </Head>
       <List articles={articles} />
     </div>

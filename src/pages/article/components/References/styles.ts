@@ -9,6 +9,9 @@ export const Container = styled.div`
     display: block;
     opacity: 0.6;
     margin-bottom: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   @media only screen and (max-width: 765px) {

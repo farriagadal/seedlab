@@ -24,7 +24,7 @@ const Heading = ({ title, image, date, category, color }: HeadingProps) => {
         <BgImg src={image} />
         <Text>
           {/* <Image src='/icons/how-work-1.svg' alt="Web Logo" width={77} height={77} /> */}
-          <h2>{ title }</h2>
+          <h1>{ title }</h1>
           { date && getDate() }
           { category && <Label color={color}>{category}</Label> }
         </Text>

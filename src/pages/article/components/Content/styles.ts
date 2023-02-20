@@ -18,8 +18,9 @@ export const Container = styled.div`
       color: white;
     }
 
-    h2 {
+    h1, h2 {
       font-size: 35px;
+      line-height: 100%;
       margin-bottom: 10px;
       margin-top: 50px;
     }

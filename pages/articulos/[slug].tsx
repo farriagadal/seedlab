@@ -17,7 +17,7 @@ export default function ArticlePage({ article }: any) {
   return (
     <div>
       <Head>
-        <title>SEEDLABS.CL - Desarrollo Web</title>
+        <title>{article.title} - Seedlabs.cl</title>
       </Head>
       <Heading
         title={article.title}
