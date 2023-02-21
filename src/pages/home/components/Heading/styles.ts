@@ -4,7 +4,7 @@ export const Container = styled.div`
   color: white;
   //
   position: relative;
-  margin-top: 175px;
+  margin-top: 200px;
   background: linear-gradient(100.79deg, var(--color-2) 6.96%, var(--color-1) 98.01%);
   max-width: calc(100vw - ((100vw - var(--container-width)) / 2));
   margin-left: calc((100vw - var(--container-width)) / 2);
@@ -19,7 +19,7 @@ export const Container = styled.div`
     padding-bottom: 72px;
     border-top-left-radius: 90px;
     margin-left: 20px;
-    margin-top: 76px;
+    margin-top: 115px;
   }
 
   p {
