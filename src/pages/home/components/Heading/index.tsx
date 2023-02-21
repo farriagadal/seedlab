@@ -26,19 +26,19 @@ const Heading = () => {
           }}
         >
           <SplideSlide>
+            <h1>Impulsa tu negocio</h1>
+            <p>Creamos sitios y aplicaciones a medida para empresas que buscan superarse. ¡Contacta con nosotros para llevar tu negocio al siguiente nivel!.</p>
+            <BgImg show={imageId === 0}><Image src='/images/graficos.jpg' alt="Seedlab Fondo" fill /></BgImg>
+          </SplideSlide>
+          <SplideSlide>
             <h1>Presencia digital</h1>
-            <p>Aumente las ventas, adquiera nuevos clientes y mejore sus oportunidades de crecimiento con una presencia web de calidad.</p>
-            <BgImg show={imageId === 0}><Image src='/images/wireframes.jpg' alt="Seedlab Fondo" fill /></BgImg>
+            <p>Atrae más clientes, aumenta tu visibilidad y convierte visitantes en clientes con nuestras estrategias personalizadas de aceleración digital. ¡Potencia tu presencia en línea hoy mismo!</p>
+            <BgImg show={imageId === 1}><Image src='/images/wireframes.jpg' alt="Seedlab Fondo" fill /></BgImg>
           </SplideSlide>
           <SplideSlide>
             <h1>Plasmar tu idea</h1>
             <p>Estamos aquí para ayudarle a diseñar, construir, implementar y escalar su producto. Contamos con profesionales que se encargaran de brindar el mejor diseño y experiencia de usuario en cada desarrollo.</p>
-            <BgImg show={imageId === 1}><Image src='/images/desarrolla-tu-producto.jpg' alt="Seedlab Fondo" fill /></BgImg>
-          </SplideSlide>
-          <SplideSlide>
-            <h1>Mejorar procesos</h1>
-            <p>Contamos con amplia experiencia en el desarrollo de software con el propósito de optimizar y automatizar procesos dentro de tu negocio, para que solo te preocupes de lo esencial.</p>
-            <BgImg show={imageId === 2}><Image src='/images/graficos.jpg' alt="Seedlab Fondo" fill /></BgImg>
+            <BgImg show={imageId === 2}><Image src='/images/desarrolla-tu-producto.jpg' alt="Seedlab Fondo" fill /></BgImg>
           </SplideSlide>
         </Splide>
       </Container>
