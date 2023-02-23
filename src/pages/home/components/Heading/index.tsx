@@ -32,7 +32,7 @@ const Heading = () => {
           </SplideSlide>
           <SplideSlide>
             <h1>Front-End Developer</h1>
-            <p>Software Engineer con +5 años de experiencia en el campo; +4 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.</p>
+            <p>Software Engineer con +5 años de experiencia en el campo; +5 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.</p>
             <BgImg show={imageId === 1}><Image src='/images/frontend.jpg' alt="Frontend" fill /></BgImg>
           </SplideSlide>
         </Splide>
