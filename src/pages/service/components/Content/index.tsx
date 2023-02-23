@@ -15,6 +15,7 @@ const Content = ({ Body }: any) => {
             NTT DATA - Senior Frontend Developer <br />
             <p>
             Mar 2022 - Present <br /><br />
+            • Lideré el desarrollo de proyecto para Falabella Retail, el cuál consistía en una app en React.js para visualizar y crear dashboards con datos y gráficos  de distintas áreas de la empresa (RRHH, Ventas, etc). Se realizó una integración con la API de Google Looker.<br /><br />
             • Lideré la integración con Google Looker y React.js para la visualización de dashboards para LATAM Airlines, lo cuál significó la renovación del contrato del cliente con la empresa gracias a los buenos resultados.<br /><br />
             • Lideré el desarrollo Front-End de plataforma web en React.js para administración y gestión de personal médico de &apos;Clínica Las Condes&apos;.<br /><br />
             • Aumenté la convertura de Tests Unitarios de 20% a 80% de Front-End en React.js de plataforma web existente de &apos;Clínica Alemana&apos;.<br /><br />
