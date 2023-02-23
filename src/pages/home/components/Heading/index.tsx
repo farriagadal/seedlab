@@ -27,7 +27,7 @@ const Heading = () => {
         >
           <SplideSlide>
             <h1>Full-Stack Developer</h1>
-            <p>Software Engineer con +5 años de experiencia en el campo; +4 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.</p>
+            <p>Software Engineer con +5 años de experiencia en el campo; +5 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.</p>
             <BgImg show={imageId === 0}><Image src='/images/graficos.jpg' alt="Seedlab Fondo" fill /></BgImg>
           </SplideSlide>
           <SplideSlide>
