@@ -20,7 +20,7 @@ const OurValues = () => {
         <Text isActive={isShow || isHover}>
           <label id="ourvalues-label">¿Quién soy?</label>
           <h2>Apasionado por buscar soluciones tecnológicas</h2>
-          <p>Software Engineer con +5 años de experiencia en el campo; +4 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.
+          <p>Software Engineer con +5 años de experiencia en el campo; +5 años en desarrollo Front-End con Typescript y Javascript (React.js, Vue.js y Angular); +2 años en desarrollo Back-End con tecnologías como Node.js y Python.
             <br />Motivado por la creación de soluciones IT, aspiro siempre al desarrollo personal tanto humano como profesional, mejorando día a día mis cualidades, metodologías y buenas prácticas.
           </p>
         </Text>
