@@ -38,7 +38,7 @@ ArticlePage.getInitialProps = async ({ req, res, query }: any) => {
   // const protocol = req.headers.referer.split(':')[0]
   let article = {}
   try {
-    const res = await axios.get(`${process.env.API_URL}/api/article`, { params: { slug: query.slug } })
+    const res = await axios.get('https://www.seedlabs.cl/api/article', { params: { slug: query.slug } })
     article = res.data
   } catch (error) {
     res.writeHead(302, { Location: '/404' })
